@@ -4,6 +4,21 @@ public class Personnage {
     private int Energy,Force,Joie,Faim,Fatigue,Proprete,MalusForce;
     private String Name;
 
+
+    private String Physique;
+
+    public Personnage(int energy, int force, int joie, int faim, int fatigue, int proprete, int malusForce, String name, String physique) {
+        Energy = energy;
+        Force = force;
+        Joie = joie;
+        Faim = faim;
+        Fatigue = fatigue;
+        Proprete = proprete;
+        MalusForce = malusForce;
+        Name = name;
+        Physique = physique;
+    }
+
     public int getEnergy() {return Energy;}
     public void setEnergy(int energy) { Energy = energy;}
 
@@ -27,4 +42,12 @@ public class Personnage {
 
     public String getName() {return Name;}
     public void setName(String name) {Name = name;}
+
+    public String getPhysique() {
+        return Physique;
+    }
+
+    public void setPhysique(String physique) {
+        Physique = physique;
+    }
 }

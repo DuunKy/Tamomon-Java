@@ -14,12 +14,8 @@ public static final String CONFIRMATION = "Êtes-vous sûre ?" +
 public static final String NOMTAMAMON = "Commençons la crétion de votre Tamamon" +
             "\n D'abord donnons-lui un nom, comment voulez-vous l'appeler ?\n";
 
-public static final String CHOIXTAMAMON = "Maintenant personnalisons son physique :" +
-        "\n Choix 1: ⊂(◉‿◉)つ " +
-        "\n Choix 2: q(❂‿❂)p" +
-        "\n Choix 3: ʕ•ᴥ•ʔ" +
-        "\n Choix 4: ԅ(≖‿≖ԅ)" +
-        "\n Choix 5: (づ｡◕‿‿◕｡)づ";
+public static final String CHOIXTAMAMON = "Maintenant personnalisons son physique :";
+public static final String CHOIX = "Choix ";
 
 public static final String PASOUF = "Okay ! Pas ouf..";
 

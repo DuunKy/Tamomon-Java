@@ -3,15 +3,18 @@ package main;
 import data.Data;
 import data.Texte;
 import model.Personnage;
+import model.Physique;
 import utilitaires.Utilitaires;
 
+import java.util.ArrayList;
+
 public class Lancement {
-    Data data;
-    Personnage perso;
+    static Data data;
+    static Personnage perso;
 
     public Lancement() {
         data = new Data();
-        perso = new Personnage();
+        perso = new Personnage(10,5,5,0,0,5,0, "none", "none");
     }
     public void lancement(){
         do{
@@ -43,28 +46,25 @@ public class Lancement {
     }
 
 
-    private void menuCreation() {
+    private static void menuCreation() {
+        Physique physique = new Physique();
         System.out.println(Texte.NOMTAMAMON);
-        String nomTamamon = Utilitaires.getStringFromUser();
-        perso.setName(nomTamamon);
+        perso.setName(Utilitaires.getStringFromUser());
+        System.out.println(perso.getName());
         do{
             System.out.println(Texte.CHOIXTAMAMON);
-            switch (Utilitaires.returnUnChiffre()){
-                case 1:
-                    break;
-                case 2:
-                    break;
-                case 3:
-                    break;
-                case 4:
-                    break;
-                case 5:
-                    break;
-                default:
-                    System.out.println(Texte.ERREUR);
-                    break;
-
+            for (Integer id : physique.getId()) {
+                System.out.print(Texte.CHOIX);
+                System.out.println(id + " : " + physique.getModel().get(id));
             }
+            int choix = Utilitaires.returnUnChiffre();
+            if (choix < physique.getId().size()) {
+                perso.setPhysique(physique.getModel().get(choix));
+                data.setSousMenuOn(false);
+            } else {
+                System.out.println(Texte.ERREUR);
+            }
+            System.out.println(perso.getPhysique());
 
         }while (data.isSousMenuOn());
     }
