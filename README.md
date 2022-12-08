@@ -20,7 +20,7 @@
     - MalusForce : 0
     - NbTour : 0
 
-## ❌ Update des vairables [ Albéric ] 
+## ✔ Update des vairables [ Albéric ] 
 
 * creer une fonction update() qui va mettre à jour les variables à chaque tours
 
