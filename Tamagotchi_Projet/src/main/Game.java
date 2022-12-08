@@ -1,17 +1,48 @@
 package main;
 
+import data.Color;
+import data.ColorBase;
 import data.Data;
 import data.Texte;
 
+import static data.Data.getNbTour;
+import static data.Data.setNbTour;
+import static main.GameMenu.gameMenu;
 import static main.Lancement.isOnGame;
 import static main.Lancement.perso;
 import static model.Personnage.*;
+import static utilitaires.Utilitaires.returnUnChiffre;
 
 public class Game {
 
     public static void game() {
-        System.out.println("game");
-        System.out.println(perso.getName() + " : " + perso.getPhysique());
+
+        System.out.println(Texte.SEPARATOR);
+
+        System.out.println(ColorBase.BOLD + ColorBase.BLUE +  perso.getName() + " : " + perso.getPhysique() + ColorBase.RESET);
+
+        System.out.println(Texte.SEPARATOR);
+
+        System.out.print(Texte.ENERGY);
+        Color.DynamicColorUp(3, 7, 10, getEnergy());
+        System.out.print(Texte.FORCE);
+        Color.DynamicColorUp(3, 7, 10, getForce());
+        System.out.print(Texte.JOIE);
+        Color.DynamicColorUp(3, 7, 10, getJoie());
+        System.out.print(Texte.FAIM);
+        Color.DynamicColorDown(7, 5, 3, getFaim());
+        System.out.print(Texte.FATIGUE);
+        Color.DynamicColorDown(7, 5, 3, getFatigue());
+        System.out.print(Texte.PROPRETE);
+        Color.DynamicColorUp(3, 7, 10, getProprete());
+        System.out.print(Texte.MALUSFORCE);
+        Color.DynamicColorDown(7, 5, 1, getMalusForce());
+
+        System.out.println(Texte.SEPARATOR);
+
+        gameMenu();
+
+
 
         update();
     }
@@ -20,6 +51,7 @@ public class Game {
         defaultAction();
         randomAction();
         contraintAction();
+        setNbTour(getNbTour() + 1);
 
     }
 
@@ -27,7 +59,7 @@ public class Game {
         setFaim(getFaim() + 1);
         setFatigue(getFatigue() + 1);
         setProprete(getProprete() - 1);
-        Data.setNbTour(Data.getNbTour() + 1);
+        setNbTour(getNbTour() + 1);
     }
 
     private static void randomAction() {
@@ -46,7 +78,7 @@ public class Game {
     }
 
     private static void contraintAction(){
-        setForce(Data.getNbTour()/10 - getMalusForce());
+        setForce(getNbTour()/10 - getMalusForce());
 
         if (getFaim() > 7) {
             setJoie(getJoie() - 1);

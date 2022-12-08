@@ -7,6 +7,8 @@ import model.Personnage;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static main.Lancement.setOnGame;
+
 
 public class Utilitaires {
     public static int returnUnChiffre() {
@@ -25,7 +27,7 @@ public class Utilitaires {
         return sc.nextLine();
     }
 
-    public static ArrayList<String> returnAllPersoParameters() {
+    public static ArrayList<String> persoToArray() {
 
         //Personnage(int energy, int force, int joie, int faim, int fatigue, int proprete, int malusForce, String name, String physique)
 
@@ -47,7 +49,7 @@ public class Utilitaires {
         return parameters;
     }
 
-    public static Personnage returnPersoFromSaveArray(ArrayList<String> parameters) {
+    public static Personnage arrayToPerso(ArrayList<String> parameters) {
 
         parameters = getValueOfSaveArray(parameters);
 
@@ -89,5 +91,10 @@ public class Utilitaires {
     public static void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
+    }
+
+    public static void quit() {
+        Data.setProgramRun(false);
+        setOnGame(false);
     }
 }

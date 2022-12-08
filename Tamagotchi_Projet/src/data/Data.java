@@ -9,7 +9,7 @@ public class Data {
     public static final int CARESSER = 1;
 
     // Utils variables:
-    private boolean ProgramRun = true;
+    private static boolean ProgramRun = true;
 
     private boolean sousMenuOn;
 
@@ -19,8 +19,8 @@ public class Data {
         return ProgramRun;
     }
 
-    public void setProgramRun(boolean programRun) {
-        this.ProgramRun = programRun;
+    public static void setProgramRun(boolean programRun) {
+        ProgramRun = programRun;
     }
 
     public boolean isSousMenuOn() {

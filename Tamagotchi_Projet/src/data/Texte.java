@@ -48,4 +48,24 @@ public class Texte {
     public static final String SAVE_INDEX_PHYSIQUE = "Physique: ";
     public static final String SAVE_INDEX_NBTOUR = "Nombre de tours: ";
 
+    // GAME BOUCLE PRINT:
+    public static final String ENERGY =     ColorBase.ITALIC + "Votre " + ColorBase.RESET + ColorBase.BOLD + "énergie" + ColorBase.RESET + ColorBase.ITALIC + " est de :        ";
+    public static final String FORCE =      ColorBase.ITALIC + "Votre " + ColorBase.RESET + ColorBase.BOLD + "force" + ColorBase.RESET + ColorBase.ITALIC + " est de :          ";
+    public static final String JOIE =       ColorBase.ITALIC + "Votre " + ColorBase.RESET + ColorBase.BOLD + "joie" + ColorBase.RESET + ColorBase.ITALIC + " est de :           ";
+    public static final String FAIM =       ColorBase.ITALIC + "Votre " + ColorBase.RESET + ColorBase.BOLD + "faim" + ColorBase.RESET + ColorBase.ITALIC + " est de :           ";
+    public static final String FATIGUE =    ColorBase.ITALIC + "Votre " + ColorBase.RESET + ColorBase.BOLD + "fatigue" + ColorBase.RESET + ColorBase.ITALIC + " est de :        ";
+    public static final String PROPRETE =   ColorBase.ITALIC + "Votre " + ColorBase.RESET + ColorBase.BOLD + "propreté" + ColorBase.RESET + ColorBase.ITALIC + " est de :       ";
+    public static final String MALUSFORCE = ColorBase.ITALIC + "Votre " + ColorBase.RESET + ColorBase.BOLD + "malus de force" + ColorBase.RESET + ColorBase.ITALIC + " est de : ";
+
+    // GAME MENU PRINT:
+    public static final String GAMEMENU = ColorBase.UNDERLINE + ColorBase.BOLD + ColorBase.BLUE + "Que voulez-vous faire ?" + ColorBase.RESET + ColorBase.GREEN +
+            "\n 1. Nourrir" +
+            "\n 2. Sortir " +
+            "\n 3. Laver" +
+            "\n 4. Carresser" +
+            ColorBase.YELLOW + "\n 5. Sauvegarder" +
+            ColorBase.RED + "\n 6. Quitter\n" + ColorBase.RESET;
+
+    //Utils:
+    public static final String SEPARATOR = "\n--------------------------------------------------------------------------------\n";
 }

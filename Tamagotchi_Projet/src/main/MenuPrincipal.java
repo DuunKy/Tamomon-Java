@@ -7,6 +7,7 @@ import static main.Game.game;
 import static main.Lancement.*;
 import static model.Creation.menuCreation;
 import static save.Save.menuSauvegarde;
+import static utilitaires.Utilitaires.quit;
 
 public class MenuPrincipal {
 
@@ -25,7 +26,7 @@ public class MenuPrincipal {
                 menuSauvegarde();
                 break;
             case 3:
-                data.setProgramRun(false);
+                quit();
                 break;
             default:
                 System.out.println(Texte.ERREUR);

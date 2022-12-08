@@ -1,10 +1,10 @@
-Noms: jojo
-Energy: 10
-Force: 5
-Joie: 5
-Faim: 0
-Fatigue: 0
-Proprete: 5
-MalusForce: 0
-Physique: ٩(̾●̮̮̃̾•̃̾)۶
-Nombre de tours: 0
+Noms: Tony Stark
+Energy: 5
+Force: 8
+Joie: 7
+Faim: 3
+Fatigue: 2
+Proprete: 3
+MalusForce: 1
+Physique: ┌∩┐(◣_◢)┌∩┐
+Nombre de tours: 16

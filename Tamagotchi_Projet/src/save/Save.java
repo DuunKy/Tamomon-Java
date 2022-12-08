@@ -9,7 +9,8 @@ import java.util.ArrayList;
 import static main.Game.game;
 import static main.Lancement.setOnGame;
 import static utilitaires.FileManage.*;
-import static utilitaires.Utilitaires.returnPersoFromSaveArray;
+import static utilitaires.Utilitaires.arrayToPerso;
+import static utilitaires.Utilitaires.persoToArray;
 
 public class Save {
 
@@ -17,7 +18,7 @@ public class Save {
         if (fileExist(Texte.SAVEPATH)) {
             File save = openFile(Texte.SAVEPATH);
             ArrayList<String> SaveArray = readFile(save);
-            Personnage perso = returnPersoFromSaveArray(SaveArray);
+            Personnage perso = arrayToPerso(SaveArray);
             if (main.Lancement.getPerso() != null) {
                 System.out.println(Texte.SAVETAMAFOUND);
                 setOnGame(true);
@@ -32,6 +33,16 @@ public class Save {
             setOnGame(false);
             return null;
         }
+    }
+
+    public static void saveGame() {
+
+        ArrayList<String> parameters = persoToArray();
+
+        File saveFile = openFile(Texte.SAVEPATH);
+        writeInFile(saveFile, parameters);
+
+
     }
 
 }
