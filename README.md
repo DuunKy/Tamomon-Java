@@ -1,6 +1,6 @@
 # Tamomon-Java
 
-Fait par : Albéric | & Duncan Lhuillery | duncan.lhuillery@ynov.com
+Fait par : Albéric | & Duncan | duncan.lhuillery@ynov.com
 
 # gestion save:
 - Chaques lignes sont un parametre
@@ -86,13 +86,13 @@ Fait par : Albéric | & Duncan Lhuillery | duncan.lhuillery@ynov.com
           - Faim = 0
           - Malus --
 
-     - Sortir (2 Energy ) [ Albéric ]:
+     - Sortir (2 Energy ) [ Duncan ]:
           - Fatigue ++
           - Joie = 10
 
     - Laver (1 Energy ) [ Albéric ]:
         - Proprete = 10
 
-    - Caresser (1 Energy) [ Albéric ]:
+    - Caresser (1 Energy) [ Duncan ]:
         - energy = force + joie - faim - fatigue
         - fatigue = 0
