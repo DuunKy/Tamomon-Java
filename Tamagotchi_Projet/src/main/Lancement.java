@@ -6,6 +6,7 @@ import model.Personnage;
 import utilitaires.Utilitaires;
 
 
+import static main.Game.game;
 import static main.MenuPrincipal.choixDeMenu;
 import static main.MenuPrincipal.menuPrincipal;
 import static model.Creation.menuCreation;
@@ -22,7 +23,7 @@ public class Lancement {
         OnGame = g;
     }
 
-    private static boolean OnGame = false;
+    private static boolean OnGame;
 
     // Base Variables Init
     static Data data;
@@ -40,8 +41,13 @@ public class Lancement {
     // Start the game:
     public void lancement(){
         do{
-            int choixMenuPrincipal = menuPrincipal();
-            choixDeMenu(choixMenuPrincipal);
+            if (isOnGame()) {
+                game();
+            } else {
+                int choixMenuPrincipal = menuPrincipal();
+                choixDeMenu(choixMenuPrincipal);
+            }
+
         }while (data.isProgramRun());
     }
 

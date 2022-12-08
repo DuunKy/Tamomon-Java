@@ -24,10 +24,12 @@ public class Save {
                 game();
             } else {
                 System.out.println(Texte.SAVETAMANOTFOUND);
+                setOnGame(false);
             }
             return perso;
         } else {
             System.out.println(Texte.SAVETAMANOTFOUND);
+            setOnGame(false);
             return null;
         }
     }

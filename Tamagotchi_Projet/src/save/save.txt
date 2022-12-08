@@ -1,4 +1,4 @@
-Noms: tyti
+Noms: jojo
 Energy: 10
 Force: 5
 Joie: 5
@@ -6,5 +6,5 @@ Faim: 0
 Fatigue: 0
 Proprete: 5
 MalusForce: 0
-Physique: ⊂(◉‿◉)つ
+Physique: ٩(̾●̮̮̃̾•̃̾)۶
 Nombre de tours: 0

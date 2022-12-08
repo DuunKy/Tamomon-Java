@@ -17,24 +17,22 @@ public class MenuPrincipal {
 
     public static void choixDeMenu(int index) {
         data.setSousMenuOn(true);
-        if (!isOnGame()) {
-            switch (index) {
-                case 1:
-                    menuCreation(data, perso);
-                    break;
-                case 2:
-                    menuSauvegarde();
-                    break;
-                case 3:
-                    data.setProgramRun(false);
-                    break;
-                default:
-                    System.out.println(Texte.ERREUR);
-                    break;
-            }
-        } else {
-            game();
+        switch (index) {
+            case 1:
+                menuCreation(data, perso);
+                break;
+            case 2:
+                menuSauvegarde();
+                break;
+            case 3:
+                data.setProgramRun(false);
+                break;
+            default:
+                System.out.println(Texte.ERREUR);
+                setOnGame(false);
+                break;
         }
     }
-
 }
+
+

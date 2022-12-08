@@ -3,6 +3,7 @@ package main;
 import data.Data;
 import data.Texte;
 
+import static main.Lancement.isOnGame;
 import static main.Lancement.perso;
 import static model.Personnage.*;
 
