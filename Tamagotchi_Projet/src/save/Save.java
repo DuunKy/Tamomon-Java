@@ -6,6 +6,7 @@ import model.Personnage;
 import java.io.File;
 import java.util.ArrayList;
 
+import static main.Lancement.setOnGame;
 import static utilitaires.FileManage.*;
 import static utilitaires.Utilitaires.returnPersoFromSaveArray;
 
@@ -21,7 +22,7 @@ public class Save {
             } else {
                 System.out.println(Texte.SAVETAMANOTFOUND);
             }
-
+            setOnGame(true);
             return perso;
         } else {
             System.out.println(Texte.SAVETAMANOTFOUND);

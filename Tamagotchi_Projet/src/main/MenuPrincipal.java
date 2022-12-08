@@ -3,8 +3,8 @@ package main;
 import data.Texte;
 import utilitaires.Utilitaires;
 
-import static main.Lancement.perso;
-import static main.Lancement.data;
+import static main.Game.game;
+import static main.Lancement.*;
 import static model.Creation.menuCreation;
 import static save.Save.menuSauvegarde;
 
@@ -22,7 +22,11 @@ public class MenuPrincipal {
                 menuCreation(data, perso);
                 break;
             case 2:
-                menuSauvegarde();
+                if (!isOnGame()) {
+                    menuSauvegarde();
+                } else {
+                    game();
+                }
                 break;
             case 3:
                 data.setProgramRun(false);
