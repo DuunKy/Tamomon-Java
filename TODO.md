@@ -49,8 +49,9 @@
 
 * Super Fonction qui sera hérité des autres fonction d'action [ ]:
     
-    ```Action(e){
-    Energy =- e
+    ```
+    Action(e) {
+        Energy =- e
     }
     ```
 
