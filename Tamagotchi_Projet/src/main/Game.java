@@ -1,12 +1,16 @@
 package main;
 
 import data.Data;
+import data.Texte;
 
+import static main.Lancement.perso;
 import static model.Personnage.*;
 
 public class Game {
 
     public static void game() {
+        System.out.println("game");
+        System.out.println(perso.getName() + " : " + perso.getPhysique());
 
         update();
     }

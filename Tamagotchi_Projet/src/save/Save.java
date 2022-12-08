@@ -6,6 +6,7 @@ import model.Personnage;
 import java.io.File;
 import java.util.ArrayList;
 
+import static main.Game.game;
 import static main.Lancement.setOnGame;
 import static utilitaires.FileManage.*;
 import static utilitaires.Utilitaires.returnPersoFromSaveArray;
@@ -19,10 +20,11 @@ public class Save {
             Personnage perso = returnPersoFromSaveArray(SaveArray);
             if (main.Lancement.getPerso() != null) {
                 System.out.println(Texte.SAVETAMAFOUND);
+                setOnGame(true);
+                game();
             } else {
                 System.out.println(Texte.SAVETAMANOTFOUND);
             }
-            setOnGame(true);
             return perso;
         } else {
             System.out.println(Texte.SAVETAMANOTFOUND);

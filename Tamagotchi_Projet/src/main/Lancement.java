@@ -18,8 +18,8 @@ public class Lancement {
         return OnGame;
     }
 
-    public static void setOnGame(boolean onGame) {
-        OnGame = onGame;
+    public static void setOnGame(boolean g) {
+        OnGame = g;
     }
 
     private static boolean OnGame = false;

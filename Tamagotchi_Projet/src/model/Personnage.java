@@ -56,4 +56,6 @@ public class Personnage {
     public static void setPhysique(String physique) {
         Physique = physique;
     }
+
+
 }

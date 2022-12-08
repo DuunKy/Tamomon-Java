@@ -1,10 +1,10 @@
-Noms: dd
+Noms: hello
 Energy: 10
-Force: 5
+Force: 0
 Joie: 5
-Faim: 0
-Fatigue: 0
-Proprete: 5
+Faim: 2
+Fatigue: 1
+Proprete: 4
 MalusForce: 0
-Physique: ┌∩┐(◣_◢)┌∩┐
-Nombre de tours: 0
+Physique: ٩(̾●̮̮̃̾•̃̾)۶
+Nombre de tours: 1
