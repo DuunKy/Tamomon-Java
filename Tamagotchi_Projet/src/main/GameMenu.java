@@ -4,7 +4,6 @@ import data.ColorBase;
 import data.Texte;
 
 import static action.Action.*;
-import static main.Lancement.setOnGame;
 import static save.Save.saveGame;
 import static utilitaires.Utilitaires.quit;
 import static utilitaires.Utilitaires.returnUnChiffre;
@@ -31,6 +30,7 @@ public class GameMenu {
                 break;
             case 5:
                 saveGame();
+                gameMenu();
                 break;
             case 6:
                 quit();

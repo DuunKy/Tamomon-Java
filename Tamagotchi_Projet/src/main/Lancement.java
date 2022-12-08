@@ -1,16 +1,11 @@
 package main;
 
 import data.Data;
-import data.Texte;
 import model.Personnage;
-import utilitaires.Utilitaires;
-
 
 import static main.Game.game;
 import static main.MenuPrincipal.choixDeMenu;
 import static main.MenuPrincipal.menuPrincipal;
-import static model.Creation.menuCreation;
-import static save.Save.menuSauvegarde;
 
 public class Lancement {
 

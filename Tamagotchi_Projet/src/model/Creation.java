@@ -14,10 +14,10 @@ import static utilitaires.Utilitaires.clearScreen;
 
 public class Creation {
 
-    public static void menuCreation(Data data, Personnage perso) {
+    public static void menuCreation(Data data) {
         Physique physique = new Physique();
         System.out.println(ColorBase.BLUE + ColorBase.BOLD + ColorBase.UNDERLINE + Texte.NOMTAMAMON);
-        perso.setName(Utilitaires.getStringFromUser());
+        Personnage.setName(Utilitaires.getStringFromUser());
 
         //System.out.println(perso.getName());
 
@@ -29,7 +29,7 @@ public class Creation {
             }
             int choix = Utilitaires.returnUnChiffre();
             if (choix < physique.getId().size()) {
-                perso.setPhysique(physique.getModel().get(choix));
+                Personnage.setPhysique(physique.getModel().get(choix));
 
                 data.setSousMenuOn(false);
             } else {
@@ -46,7 +46,7 @@ public class Creation {
 
             clearScreen();
             System.out.println(ColorBase.GREEN + ColorBase.BOLD + ColorBase.UNDERLINE + Texte.SAVETAMACREATE);
-            System.out.println(ColorBase.BLUE + perso.getName() + " : " + perso.getPhysique() + ColorBase.RESET);
+            System.out.println(ColorBase.BLUE + Personnage.getName() + " : " + Personnage.getPhysique() + ColorBase.RESET);
             setOnGame(false);
 
 

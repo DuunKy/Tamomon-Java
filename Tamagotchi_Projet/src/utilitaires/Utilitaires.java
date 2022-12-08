@@ -7,6 +7,7 @@ import model.Personnage;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static java.lang.System.exit;
 import static main.Lancement.setOnGame;
 
 
@@ -94,7 +95,12 @@ public class Utilitaires {
     }
 
     public static void quit() {
-        Data.setProgramRun(false);
-        setOnGame(false);
+        System.out.println(Texte.CONFIRMATION);
+        if (returnUnChiffre() == 1) {
+            Data.setProgramRun(false);
+            setOnGame(false);
+            exit(0);
+        }
+
     }
 }

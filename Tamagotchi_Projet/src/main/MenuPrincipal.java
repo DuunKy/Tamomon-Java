@@ -4,7 +4,6 @@ import data.ColorBase;
 import data.Texte;
 import utilitaires.Utilitaires;
 
-import static main.Game.game;
 import static main.Lancement.*;
 import static model.Creation.menuCreation;
 import static save.Save.menuSauvegarde;
@@ -21,7 +20,7 @@ public class MenuPrincipal {
         data.setSousMenuOn(true);
         switch (index) {
             case 1:
-                menuCreation(data, perso);
+                menuCreation(data);
                 break;
             case 2:
                 menuSauvegarde();
