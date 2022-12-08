@@ -27,4 +27,12 @@ public static final String GESTIONTAMAMON = "Maintenant occupons nous un peu de 
         "\n 3. Laver" +
         "\n 4. Carresser\n";
 
-public static final String ERREUR = "Une erreur s'est produite réessayez !\n";}
+public static final String ERREUR = "Une erreur s'est produite réessayez !\n";
+public static final String SAVEPATH = "C:/Users/alber/Desktop/save/save.txt";
+
+public static final String SAVETAMAFOUND = "Tamagochi trouvé !";
+
+public static final String SAVETAMANOTFOUND = "Pas de tamagochi trouvé ! \n Essayez d'en créer un !\n";
+
+public static final String SAVETAMACREATE = "Tamagochi créé avec succès! \n Vous pouvez maintenant le nourrir, le promener, le laver et le carresser !\n";
+}

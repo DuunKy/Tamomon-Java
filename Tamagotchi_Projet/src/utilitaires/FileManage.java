@@ -11,14 +11,16 @@ public class FileManage {
         return file;
     }
 
-    public static void createFile(String path) {
+    public static File createFile(String path) {
         File file = new File(path);
         try {
             file.createNewFile();
+            System.out.println("File created: " + file.getName());
         }
         catch(Exception e) {
             System.out.println("Error: " + e);
         }
+        return file;
     }
 
     public static ArrayList<String> readFile(File file) {
@@ -36,14 +38,24 @@ public class FileManage {
         return lines;
     }
 
-    public static void writeFile(File file, ArrayList<String> lines) {
+    public static void writeInFile(File file, ArrayList<String> lines) {
         try {
+            java.io.FileWriter myWriter = new java.io.FileWriter(file);
             for(String line : lines) {
-                System.out.println(line);
+
+                myWriter.write(line);
+                myWriter.write(System.getProperty("line.separator"));
+
             }
+            myWriter.close();
         }
         catch(Exception e) {
             System.out.println("Error: " + e);
         }
+    }
+
+    public static boolean fileExist(String path) {
+        File file = new File(path);
+        return file.exists();
     }
 }
