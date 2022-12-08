@@ -1,5 +1,7 @@
 # Tamomon-Java
 
+Fait par : Albéric | & Duncan Lhuillery | duncan.lhuillery@ynov.com
+
 # gestion save:
 - Chaques lignes sont un parametre
 
@@ -24,7 +26,7 @@
    *  Mettre un minimum aux variables car elles descendent en négatif sans rien faire
    *  creer une fonction mort qui propose de réssucité si on a 7 Energy ou qui propose de recommencer
 
-## ✔ Init des variables: [ Albéric ] 
+## ✔ Init des variables: [ Duncan ] 
     - Name : "none"
     - Physique : "none"
     - Energy : 10
