@@ -8,6 +8,9 @@ import utilitaires.Utilitaires;
 
 import java.util.ArrayList;
 
+import static model.Creation.menuCreation;
+import static save.Save.menuSauvegarde;
+
 public class Lancement {
     static Data data;
     static Personnage perso;
@@ -31,7 +34,7 @@ public class Lancement {
         data.setSousMenuOn(true);
         switch (index) {
             case 1:
-                menuCreation();
+                menuCreation(data, perso);
                 break;
             case 2:
                 menuSauvegarde();
@@ -44,32 +47,5 @@ public class Lancement {
                 break;
         }
     }
-
-
-    private static void menuCreation() {
-        Physique physique = new Physique();
-        System.out.println(Texte.NOMTAMAMON);
-        perso.setName(Utilitaires.getStringFromUser());
-        System.out.println(perso.getName());
-        do{
-            System.out.println(Texte.CHOIXTAMAMON);
-            for (Integer id : physique.getId()) {
-                System.out.print(Texte.CHOIX);
-                System.out.println(id + " : " + physique.getModel().get(id));
-            }
-            int choix = Utilitaires.returnUnChiffre();
-            if (choix < physique.getId().size()) {
-                perso.setPhysique(physique.getModel().get(choix));
-                data.setSousMenuOn(false);
-            } else {
-                System.out.println(Texte.ERREUR);
-            }
-            System.out.println(perso.getPhysique());
-
-        }while (data.isSousMenuOn());
-    }
-    private void menuSauvegarde() {
-    }
-
 
 }
