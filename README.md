@@ -54,7 +54,7 @@
     ajouter :
         Nbtour: (penser a parser les parametres suivant des parametres Personnages)
 
-## ❌ Creer les fonctions d'action pour: 
+## ✔ Creer les fonctions d'action pour: 
 
 * Super Fonction qui sera hérité des autres fonction d'action [ Albéric ]:
     
