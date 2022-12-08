@@ -12,7 +12,7 @@
 
 # Update des vairables [ ]
 
--> creer une fonction update() qui va mettre à jour les variables à chaque tours
+* creer une fonction update() qui va mettre à jour les variables à chaque tours
 
     -> Action Par défaut :
         - faim++
@@ -47,7 +47,7 @@
 
 # Creer les fonctions d'action pour:
 
--> Super Fonction qui sera hérité des autres fonction d'action [ ]:
+* Super Fonction qui sera hérité des autres fonction d'action [ ]:
     
     Action(e):
     - Energy =- e
