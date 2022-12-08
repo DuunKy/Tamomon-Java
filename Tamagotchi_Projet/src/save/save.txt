@@ -1,9 +1,9 @@
-10
-5
-5
-0
-0
-5
-0
-kk
-٩(̾●̮̮̃̾•̃̾)۶
+Noms: ehe
+Energy: 10
+Force: 5
+Joie: 5
+Faim: 0
+Fatigue: 0
+Proprete: 5
+MalusForce: 0
+Physique: ٩(̾●̮̮̃̾•̃̾)۶

@@ -2,9 +2,11 @@ package data;
 
 public class Data {
 
-boolean menuOn = true;
+    private boolean menuOn = true;
 
-boolean sousMenuOn;
+    private boolean sousMenuOn;
+
+    private static int NbTour = 0;
 
     public boolean isMenuOn() {
         return menuOn;
@@ -20,5 +22,13 @@ boolean sousMenuOn;
 
     public void setSousMenuOn(boolean sousMenuOn) {
         this.sousMenuOn = sousMenuOn;
+    }
+
+    public static int getNbTour() {
+        return NbTour;
+    }
+
+    public static void setNbTour(int nbTour) {
+        NbTour = nbTour;
     }
 }

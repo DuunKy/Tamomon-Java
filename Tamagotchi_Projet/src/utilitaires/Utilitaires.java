@@ -1,18 +1,21 @@
 package utilitaires;
 
+import data.Data;
+import data.Texte;
 import model.Personnage;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static java.lang.String.valueOf;
+
 public class Utilitaires {
     public static int returnUnChiffre() {
         Scanner sc = new Scanner(System.in);
         int i = 0;
-        try{
+        try {
             i = sc.nextInt();
-        }
-        catch(Exception e) {
+        } catch (Exception e) {
             System.out.println("Error: " + e);
         }
         return i;
@@ -29,37 +32,55 @@ public class Utilitaires {
 
         ArrayList<String> parameters = new ArrayList<>();
 
-        parameters.add(String.valueOf(perso.getEnergy()));
-        parameters.add(String.valueOf(perso.getForce()));
-        parameters.add(String.valueOf(perso.getJoie()));
-        parameters.add(String.valueOf(perso.getFaim()));
-        parameters.add(String.valueOf(perso.getFatigue()));
-        parameters.add(String.valueOf(perso.getProprete()));
-        parameters.add(String.valueOf(perso.getMalusForce()));
-        parameters.add(perso.getName());
-        parameters.add(perso.getPhysique());
+        parameters.add(Texte.SAVE_INDEX_NAME + perso.getName());
+        parameters.add(Texte.SAVE_INDEX_ENERGY + perso.getEnergy());
+        parameters.add(Texte.SAVE_INDEX_FORCE + perso.getForce());
+        parameters.add(Texte.SAVE_INDEX_JOIE + perso.getJoie());
+        parameters.add(Texte.SAVE_INDEX_FAIM + perso.getFaim());
+        parameters.add(Texte.SAVE_INDEX_FATIGUE + perso.getFatigue());
+        parameters.add(Texte.SAVE_INDEX_PROPRETE + perso.getProprete());
+        parameters.add(Texte.SAVE_INDEX_MALUSFORCE + perso.getMalusForce());
+        parameters.add(Texte.SAVE_INDEX_PHYSIQUE + perso.getPhysique());
+        parameters.add(Texte.SAVE_INDEX_NBTOUR + Data.getNbTour());
 
         return parameters;
     }
 
     public static Personnage returnPersoFromSaveArray(ArrayList<String> parameters) {
-        if (parameters.size() != 9) {
-            System.out.println("Error: parameters array is not a save array. It may be contains 9 parameters instead of " + parameters.size() + " parameters.");
-            return null;
-        }
-        else {
-            return new Personnage(
-                Integer.parseInt(parameters.get(0)),
+
+        parameters = getValueOfSaveArray(parameters);
+
+        Data.setNbTour(Integer.parseInt(parameters.get(9)));
+
+        return new Personnage(
+
                 Integer.parseInt(parameters.get(1)),
                 Integer.parseInt(parameters.get(2)),
                 Integer.parseInt(parameters.get(3)),
                 Integer.parseInt(parameters.get(4)),
                 Integer.parseInt(parameters.get(5)),
                 Integer.parseInt(parameters.get(6)),
-                parameters.get(7),
+                Integer.parseInt(parameters.get(7)),
+                parameters.get(0),
                 parameters.get(8)
-            );
-        }
+        );
+
+
+    }
+
+    private static ArrayList<String> getValueOfSaveArray(ArrayList<String> parameters) {
+        ArrayList<String> values = new ArrayList<>();
+        values.add(parameters.get(0).substring(Texte.SAVE_INDEX_NAME.length()));
+        values.add(parameters.get(1).substring(Texte.SAVE_INDEX_ENERGY.length()));
+        values.add(parameters.get(2).substring(Texte.SAVE_INDEX_FORCE.length()));
+        values.add(parameters.get(3).substring(Texte.SAVE_INDEX_JOIE.length()));
+        values.add(parameters.get(4).substring(Texte.SAVE_INDEX_FAIM.length()));
+        values.add(parameters.get(5).substring(Texte.SAVE_INDEX_FATIGUE.length()));
+        values.add(parameters.get(6).substring(Texte.SAVE_INDEX_PROPRETE.length()));
+        values.add(parameters.get(7).substring(Texte.SAVE_INDEX_MALUSFORCE.length()));
+        values.add(parameters.get(8).substring(Texte.SAVE_INDEX_PHYSIQUE.length()));
+
+        return values;
     }
 
     public static void clearScreen() {
