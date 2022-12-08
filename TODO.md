@@ -14,16 +14,16 @@
 
 * creer une fonction update() qui va mettre à jour les variables à chaque tours
 
-    -> Action Par défaut :
+    * Action Par défaut :
         - faim++
         - fatigue++
         - propreté--
         - nbtour++
-    -> Action Random (1 au choix):
+    * Action Random (1 au choix):
         - faim++
         - fatigue++
         - propreté--
-    -> Action de contraintes :
+    * Action de contraintes :
         - force = NbTours - MalusForce
         - si faim>7 -> joie--, fatigue++, energy--
         - si fatigue>7 -> MalusForce++, energy--
@@ -56,7 +56,7 @@
     ```
 
      - Nourrir (1 Energy ) [ ]:
-           - Faim = 0
+          - Faim = 0
           - Malus --
 
      - Sortir (2 Energy ) [ ]:
