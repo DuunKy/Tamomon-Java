@@ -8,14 +8,21 @@
 - Remplir ds les crochets les noms
 - ajouter ✔ au TODO fait et ❌ au non fait
 
+## ❌ Si le temps le permet, faire un systeme de difficulté: [ ]
+
+   *  modifier ds data les retrait et ajou de points en fonction de la difficulté
+   *  rendre plus fort les ennemys
+
 ## ❌ Ajout couleur qui facilite la lisibilité: [ ]
-    * func DynamicColor ✔
-    * func Simple Color ✔ 
-    * assigner des couleurs aux textes 🔁
+
+    *  func DynamicColor ✔
+    *  func Simple Color ✔ 
+    *  assigner des couleurs aux textes 🔁
 
 ## ❌ Gestion de la mort: [ ]
-    * Mettre un minimum aux variables car elles descendent en négatif sans rien faire
-    * creer une fonction mort qui propose de réssucité si on a 7 Energy ou qui propose de recommencer
+
+    *  Mettre un minimum aux variables car elles descendent en négatif sans rien faire
+    *  creer une fonction mort qui propose de réssucité si on a 7 Energy ou qui propose de recommencer
 
 ## ❌ Init des variables: [ Albéric ] 
     - Name : "none"
