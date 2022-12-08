@@ -1,4 +1,4 @@
-Noms: ehe
+Noms: dd
 Energy: 10
 Force: 5
 Joie: 5
@@ -6,4 +6,5 @@ Faim: 0
 Fatigue: 0
 Proprete: 5
 MalusForce: 0
-Physique: ٩(̾●̮̮̃̾•̃̾)۶
+Physique: ┌∩┐(◣_◢)┌∩┐
+Nombre de tours: 0

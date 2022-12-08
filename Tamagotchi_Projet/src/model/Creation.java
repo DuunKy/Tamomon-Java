@@ -37,10 +37,10 @@ public class Creation {
 
             //create the save file and write all perso's parameters in
 
-            System.out.println(Utilitaires.returnAllPersoParameters(perso));
+            System.out.println(Utilitaires.returnAllPersoParameters());
 
             File save = FileManage.createFile(Texte.SAVEPATH);
-            FileManage.writeInFile(save, Utilitaires.returnAllPersoParameters(perso));
+            FileManage.writeInFile(save, Utilitaires.returnAllPersoParameters());
 
             clearScreen();
             System.out.println(Texte.SAVETAMACREATE);

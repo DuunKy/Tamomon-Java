@@ -16,7 +16,7 @@ public class Save {
             File save = openFile(Texte.SAVEPATH);
             ArrayList<String> SaveArray = readFile(save);
             Personnage perso = returnPersoFromSaveArray(SaveArray);
-            if (perso != null) {
+            if (main.Lancement.getPerso() != null) {
                 System.out.println(Texte.SAVETAMAFOUND);
             } else {
                 System.out.println(Texte.SAVETAMANOTFOUND);

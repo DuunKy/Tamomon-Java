@@ -25,22 +25,24 @@ public class Utilitaires {
         return sc.nextLine();
     }
 
-    public static ArrayList<String> returnAllPersoParameters(Personnage perso) {
+    public static ArrayList<String> returnAllPersoParameters() {
 
         //Personnage(int energy, int force, int joie, int faim, int fatigue, int proprete, int malusForce, String name, String physique)
 
         ArrayList<String> parameters = new ArrayList<>();
 
-        parameters.add(Texte.SAVE_INDEX_NAME + perso.getName());
-        parameters.add(Texte.SAVE_INDEX_ENERGY + perso.getEnergy());
-        parameters.add(Texte.SAVE_INDEX_FORCE + perso.getForce());
-        parameters.add(Texte.SAVE_INDEX_JOIE + perso.getJoie());
-        parameters.add(Texte.SAVE_INDEX_FAIM + perso.getFaim());
-        parameters.add(Texte.SAVE_INDEX_FATIGUE + perso.getFatigue());
-        parameters.add(Texte.SAVE_INDEX_PROPRETE + perso.getProprete());
-        parameters.add(Texte.SAVE_INDEX_MALUSFORCE + perso.getMalusForce());
-        parameters.add(Texte.SAVE_INDEX_PHYSIQUE + perso.getPhysique());
+        parameters.add(Texte.SAVE_INDEX_NAME + Personnage.getName());
+        parameters.add(Texte.SAVE_INDEX_ENERGY + Personnage.getEnergy());
+        parameters.add(Texte.SAVE_INDEX_FORCE + Personnage.getForce());
+        parameters.add(Texte.SAVE_INDEX_JOIE + Personnage.getJoie());
+        parameters.add(Texte.SAVE_INDEX_FAIM + Personnage.getFaim());
+        parameters.add(Texte.SAVE_INDEX_FATIGUE + Personnage.getFatigue());
+        parameters.add(Texte.SAVE_INDEX_PROPRETE + Personnage.getProprete());
+        parameters.add(Texte.SAVE_INDEX_MALUSFORCE + Personnage.getMalusForce());
+        parameters.add(Texte.SAVE_INDEX_PHYSIQUE + Personnage.getPhysique());
         parameters.add(Texte.SAVE_INDEX_NBTOUR + Data.getNbTour());
+
+        System.out.println(parameters);
 
         return parameters;
     }
@@ -49,6 +51,7 @@ public class Utilitaires {
 
         parameters = getValueOfSaveArray(parameters);
 
+        System.out.println(parameters);
         Data.setNbTour(Integer.parseInt(parameters.get(9)));
 
         return new Personnage(
@@ -78,6 +81,7 @@ public class Utilitaires {
         values.add(parameters.get(6).substring(Texte.SAVE_INDEX_PROPRETE.length()));
         values.add(parameters.get(7).substring(Texte.SAVE_INDEX_MALUSFORCE.length()));
         values.add(parameters.get(8).substring(Texte.SAVE_INDEX_PHYSIQUE.length()));
+        values.add(parameters.get(9).substring(Texte.SAVE_INDEX_NBTOUR.length()));
 
         return values;
     }

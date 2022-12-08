@@ -28,6 +28,10 @@ public class Lancement {
     static Data data;
     static Personnage perso;
 
+    public static Personnage getPerso() {
+        return perso;
+    }
+
     public Lancement() {
         data = new Data();
         perso = new Personnage(10,5,5,0,0,5,0, "none", "none");
