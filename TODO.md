@@ -30,7 +30,7 @@
         - si propreté<3 -> joie--, energy--, force--
         - si joie<3 -> fatigue++, ernergy--, force--
 
-# Refaire le fichier de save aux normes: [ Albéric ]
+# Refaire le fichier de save aux normes: [ Albéric ] ## "DONE"
     Nom:
     Energy:
     Force:
