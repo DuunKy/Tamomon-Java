@@ -28,7 +28,7 @@
     - Name : "none"
     - Physique : "none"
     - Energy : 10
-    - Force : 5
+    - Force : 0
     - Joie : 10
     - Faim : 0
     - Fatigue : 0
