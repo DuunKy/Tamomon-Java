@@ -34,7 +34,7 @@
         - fatigue++
         - propreté--
     * Action de contraintes :
-        - force = NbTours - MalusForce
+        - force = NbTours/10 - MalusForce
         - si faim>7 -> joie--, fatigue++, energy--
         - si fatigue>7 -> MalusForce++, energy--
         - si propreté<3 -> joie--, energy--, force--
