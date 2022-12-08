@@ -8,7 +8,7 @@
 - Remplir ds les crochets les noms
 - ajouter ✔ au TODO fait et ❌ au non fait
 
-## ❌ Init des variables: [ ] 
+## ❌ Init des variables: [ Albéric ] 
     - Name : "none"
     - Physique : "none"
     - Energy : 10
@@ -56,7 +56,7 @@
 
 ## ❌ Creer les fonctions d'action pour: 
 
-* Super Fonction qui sera hérité des autres fonction d'action [ ]:
+* Super Fonction qui sera hérité des autres fonction d'action [ Albéric ]:
     
     ```
     Action(e) {
