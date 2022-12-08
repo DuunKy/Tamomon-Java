@@ -49,8 +49,10 @@
 
 * Super Fonction qui sera hérité des autres fonction d'action [ ]:
     
-    Action(e):
-    - Energy =- e
+    ```Action(e){
+    Energy =- e
+    }
+    ```
 
      - Nourrir (1 Energy ) [ ]:
            - Faim = 0
