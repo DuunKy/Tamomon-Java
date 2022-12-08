@@ -48,16 +48,16 @@
 
 -> Super Fonction qui sera hérité des autres fonction d'action [ ]:
     
-    'Action(e):
-    - Energy =- e'
+    Action(e):
+    - Energy =- e
 
-    - Nourrir (1 Energy ) [ ]:
-        - Faim = 0
-        - Malus --
+     - Nourrir (1 Energy ) [ ]:
+           - Faim = 0
+          - Malus --
 
-    - Sortir (2 Energy ) [ ]:
-        - Fatigue ++
-        - Joie = 10
+     - Sortir (2 Energy ) [ ]:
+          - Fatigue ++
+          - Joie = 10
 
     - Laver (1 Energy ) [ ]:
         - Proprete = 10
