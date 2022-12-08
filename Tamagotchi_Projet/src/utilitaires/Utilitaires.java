@@ -13,21 +13,21 @@ public class Utilitaires {
             i = sc.nextInt();
         }
         catch(Exception e) {
+            System.out.println("Error: " + e);
         }
         return i;
     }
 
     public static String getStringFromUser() {
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        return s;
+        return sc.nextLine();
     }
 
     public static ArrayList<String> returnAllPersoParameters(Personnage perso) {
 
         //Personnage(int energy, int force, int joie, int faim, int fatigue, int proprete, int malusForce, String name, String physique)
 
-        ArrayList<String> parameters = new ArrayList<String>();
+        ArrayList<String> parameters = new ArrayList<>();
 
         parameters.add(String.valueOf(perso.getEnergy()));
         parameters.add(String.valueOf(perso.getForce()));
@@ -48,7 +48,7 @@ public class Utilitaires {
             return null;
         }
         else {
-            Personnage perso = new Personnage(
+            return new Personnage(
                 Integer.parseInt(parameters.get(0)),
                 Integer.parseInt(parameters.get(1)),
                 Integer.parseInt(parameters.get(2)),
@@ -59,7 +59,6 @@ public class Utilitaires {
                 parameters.get(7),
                 parameters.get(8)
             );
-            return perso;
         }
     }
 

@@ -7,14 +7,18 @@ import java.util.Scanner;
 public class FileManage {
 
     public static File openFile(String path) {
-        File file = new File(path);
-        return file;
+        return new File(path);
     }
 
     public static File createFile(String path) {
+
         File file = new File(path);
         try {
-            file.createNewFile();
+            if (file.createNewFile()) {
+                System.out.println("File created: " + file.getName());
+            } else {
+                System.out.println("File already exists.");
+            }
             System.out.println("File created: " + file.getName());
         }
         catch(Exception e) {
@@ -24,7 +28,7 @@ public class FileManage {
     }
 
     public static ArrayList<String> readFile(File file) {
-        ArrayList<String> lines = new ArrayList<String>();
+        ArrayList<String> lines = new ArrayList<>();
         try {
             Scanner sc = new Scanner(file);
             while(sc.hasNextLine()) {

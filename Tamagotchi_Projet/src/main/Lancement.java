@@ -3,10 +3,8 @@ package main;
 import data.Data;
 import data.Texte;
 import model.Personnage;
-import model.Physique;
 import utilitaires.Utilitaires;
 
-import java.util.ArrayList;
 
 import static model.Creation.menuCreation;
 import static save.Save.menuSauvegarde;

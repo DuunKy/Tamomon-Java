@@ -7,8 +7,8 @@ import static utilitaires.FileManage.openFile;
 import static utilitaires.FileManage.readFile;
 
 public class Physique {
-    private ArrayList<String> model = new ArrayList<String>();
-    private ArrayList<Integer> id = new ArrayList<Integer>();
+    private final ArrayList<String> model;
+    private final ArrayList<Integer> id = new ArrayList<>();
 
     //open model txt and append each line to model
 
