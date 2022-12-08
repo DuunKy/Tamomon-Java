@@ -64,17 +64,17 @@
     }
     ```
 
-     - Nourrir (1 Energy ) [ ]:
+     - Nourrir (1 Energy ) [ Albéric ]:
           - Faim = 0
           - Malus --
 
-     - Sortir (2 Energy ) [ ]:
+     - Sortir (2 Energy ) [ Albéric ]:
           - Fatigue ++
           - Joie = 10
 
-    - Laver (1 Energy ) [ ]:
+    - Laver (1 Energy ) [ Albéric ]:
         - Proprete = 10
 
-    - Caresser (1 Energy) [ ]:
+    - Caresser (1 Energy) [ Albéric ]:
         - energy = force + joie - faim - fatigue
         - fatigue = 0
