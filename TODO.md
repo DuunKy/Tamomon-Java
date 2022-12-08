@@ -1,4 +1,4 @@
-# ❌ Init des variables: [ ] 
+## ❌ Init des variables: [ ] 
     - Name : "none"
     - Physique : "none"
     - Energy : 10
@@ -10,7 +10,7 @@
     - MalusForce : 0
     - NbTour : 0
 
-# ❌ Update des vairables [ ] 
+## ❌ Update des vairables [ ] 
 
 * creer une fonction update() qui va mettre à jour les variables à chaque tours
 
@@ -30,7 +30,7 @@
         - si propreté<3 -> joie--, energy--, force--
         - si joie<3 -> fatigue++, ernergy--, force--
 
-# ✔ Refaire le fichier de save aux normes: [ Albéric ] 
+## ✔ Refaire le fichier de save aux normes: [ Albéric ] 
     Nom:
     Energy:
     Force:
@@ -44,7 +44,7 @@
     ajouter :
         Nbtour: (penser a parser les parametres suivant des parametres Personnages)
 
-# ❌ Creer les fonctions d'action pour: 
+## ❌ Creer les fonctions d'action pour: 
 
 * Super Fonction qui sera hérité des autres fonction d'action [ ]:
     
