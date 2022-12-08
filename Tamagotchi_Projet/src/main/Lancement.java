@@ -6,10 +6,25 @@ import model.Personnage;
 import utilitaires.Utilitaires;
 
 
+import static main.MenuPrincipal.choixDeMenu;
+import static main.MenuPrincipal.menuPrincipal;
 import static model.Creation.menuCreation;
 import static save.Save.menuSauvegarde;
 
 public class Lancement {
+
+    //Varaible OnGame
+    public static boolean isOnGame() {
+        return OnGame;
+    }
+
+    public static void setOnGame(boolean onGame) {
+        OnGame = onGame;
+    }
+
+    private static boolean OnGame = false;
+
+    // Base Variables Init
     static Data data;
     static Personnage perso;
 
@@ -17,33 +32,13 @@ public class Lancement {
         data = new Data();
         perso = new Personnage(10,5,5,0,0,5,0, "none", "none");
     }
+
+    // Start the game:
     public void lancement(){
         do{
             int choixMenuPrincipal = menuPrincipal();
             choixDeMenu(choixMenuPrincipal);
-        }while (data.isMenuOn());
-    }
-
-    private int menuPrincipal(){
-        System.out.println(Texte.MENUPRINCIPAL);
-        return Utilitaires.returnUnChiffre();
-    }
-    private void choixDeMenu(int index) {
-        data.setSousMenuOn(true);
-        switch (index) {
-            case 1:
-                menuCreation(data, perso);
-                break;
-            case 2:
-                menuSauvegarde();
-                break;
-            case 3:
-                data.setMenuOn(false);
-                break;
-            default:
-                System.out.println(Texte.ERREUR);
-                break;
-        }
+        }while (data.isProgramRun());
     }
 
 }

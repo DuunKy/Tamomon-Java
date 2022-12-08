@@ -9,18 +9,18 @@ public class Data {
     public static final int CARESSER = 1;
 
     // Utils variables:
-    private boolean menuOn = true;
+    private boolean ProgramRun = true;
 
     private boolean sousMenuOn;
 
     private static int NbTour = 0;
 
-    public boolean isMenuOn() {
-        return menuOn;
+    public boolean isProgramRun() {
+        return ProgramRun;
     }
 
-    public void setMenuOn(boolean menuOn) {
-        this.menuOn = menuOn;
+    public void setProgramRun(boolean programRun) {
+        this.ProgramRun = programRun;
     }
 
     public boolean isSousMenuOn() {
