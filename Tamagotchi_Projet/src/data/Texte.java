@@ -28,7 +28,7 @@ public static final String GESTIONTAMAMON = "Maintenant occupons nous un peu de 
         "\n 4. Carresser\n";
 
 public static final String ERREUR = "Une erreur s'est produite réessayez !\n";
-public static final String SAVEPATH = "C:/Users/alber/Desktop/save/save.txt";
+public static final String SAVEPATH = "src/save/save.txt";
 
 public static final String SAVETAMAFOUND = "Tamagochi trouvé !";
 

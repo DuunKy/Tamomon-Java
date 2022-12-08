@@ -7,6 +7,8 @@ import utilitaires.Utilitaires;
 
 import java.io.File;
 
+import static utilitaires.Utilitaires.clearScreen;
+
 
 public class Creation {
 
@@ -29,6 +31,7 @@ public class Creation {
 
                 data.setSousMenuOn(false);
             } else {
+                clearScreen();
                 System.out.println(Texte.ERREUR);
             }
 
@@ -39,6 +42,7 @@ public class Creation {
             File save = FileManage.createFile(Texte.SAVEPATH);
             FileManage.writeInFile(save, Utilitaires.returnAllPersoParameters(perso));
 
+            clearScreen();
             System.out.println(Texte.SAVETAMACREATE);
             System.out.println(perso.getName() + " : " + perso.getPhysique());
 
