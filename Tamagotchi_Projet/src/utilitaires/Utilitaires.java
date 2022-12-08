@@ -7,7 +7,6 @@ import model.Personnage;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static java.lang.String.valueOf;
 
 public class Utilitaires {
     public static int returnUnChiffre() {
