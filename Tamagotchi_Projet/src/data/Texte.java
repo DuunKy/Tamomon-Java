@@ -67,11 +67,24 @@ public class Texte {
     public static final String RANDOM_LOOSE_FATIGUE = "Vous avez un coup de barre: ";
     public static final String RANDOM_LOOSE_PROPRETE = "Cette journée vous a bien sali: ";
         // CONTRAINTS:
-    public static final String CONTRAINT_FAIM = " Vous avez trop faim ! Vous êtes fatigué, Vous êtes dans une mauvaise passe et vous avez perdu de l'énergie !";
-    public static final String CONTRAINT_FATIGUE = " Vous êtes trop fatigué ! Vous avez pris un sale coup, et vous avez perdu de l'énergie !";
-    public static final String CONTRAINT_PROPRETE = " Vous êtes trop sale ! Vous êtes attristé, vous de l'énergie et de la force !";
-    public static final String CONTRAINT_JOIE = " Vous êtes trop triste ! Vous avez un coup de barre, vous avez perdu de l'énergie et de la force !";
-
+    public static final String CONTRAINT_FAIM = "Vous avez trop faim ! Vous êtes fatigué, Vous êtes dans une mauvaise passe et vous avez perdu de l'énergie !";
+    public static final String CONTRAINT_FATIGUE = "Vous êtes trop fatigué ! Vous avez pris un sale coup, et vous avez perdu de l'énergie !";
+    public static final String CONTRAINT_PROPRETE = "Vous êtes trop sale ! Vous êtes attristé, vous de l'énergie et de la force !";
+    public static final String CONTRAINT_JOIE = "Vous êtes trop triste ! Vous avez un coup de barre, vous avez perdu de l'énergie et de la force !";
+    //DEATH PRINT:
+    public static final String DEATH_FAIM = "Vous êtes mort de faim !";
+    public static final String DEATH_FATIGUE = "Vous êtes mort de fatigue !";
+    public static final String DEATH_PROPRETE = "Vous êtes mort de salete !";
+    //DEATH MENU:
+    public static final String DEATH_MENU ="Que voulez-vous faire ?";
+    public static final String NOT_ENOUGHT_ENERGY = "Vous n'avez pas assez d'énergie !";
+    public static String DEATH_CHOICE_1 =
+            "\n 1. Revivre, coute 7 Energie, vous avez: " ;
+            public static String DEATH_CHOICE_2 =
+        "\n 2. Revenir au menu principal\n 3. Quitter\n";
+    public static final String DEATH_JOIE = "Vous êtes mort de tristesse !";
+    public static final String DEATH_FORCE = "Vous êtes mort de fatigue !";
+    public static final String DEATH_DEFAULT = "Vous êtes mort!";
     //Utils:
     public static final String SEPARATOR = "\n--------------------------------------------------------------------------------\n";
     public static final String DAY = "Jour ";

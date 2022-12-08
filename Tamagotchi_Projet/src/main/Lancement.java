@@ -33,8 +33,13 @@ public class Lancement {
         perso = new Personnage(10,0,10,0,0,10,0, "none", "none");
     }
 
+    public static void init() {
+        data = new Data();
+        perso = new Personnage(10,0,10,0,0,10,0, "none", "none");
+    }
+
     // Start the game:
-    public void lancement(){
+    public static void lancement(){
         do{
             if (isOnGame()) {
                 game();

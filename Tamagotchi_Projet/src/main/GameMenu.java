@@ -35,6 +35,9 @@ public class GameMenu {
             case 6:
                 quit();
                 break;
+            default:
+                System.out.println(ColorBase.YELLOW + Texte.PASOUF + ColorBase.RED);
+                break;
         }
 
     }

@@ -8,6 +8,7 @@ import utilitaires.Utilitaires;
 
 import java.io.File;
 
+import static main.Lancement.init;
 import static main.Lancement.setOnGame;
 import static utilitaires.Utilitaires.clearScreen;
 
@@ -15,6 +16,7 @@ import static utilitaires.Utilitaires.clearScreen;
 public class Creation {
 
     public static void menuCreation(Data data) {
+        init() ;
         Physique physique = new Physique();
         System.out.println(ColorBase.BLUE + ColorBase.BOLD + ColorBase.UNDERLINE + Texte.NOMTAMAMON);
         Personnage.setName(Utilitaires.getStringFromUser());
@@ -36,6 +38,8 @@ public class Creation {
                 clearScreen();
                 System.out.println(ColorBase.ERROR + Texte.ERREUR);
             }
+
+
 
             //create the save file and write all perso's parameters in
 

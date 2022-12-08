@@ -7,6 +7,10 @@ public class Data {
     public static final int SORTIR = 2;
     public static final int LAVER = 1;
     public static final int CARESSER = 1;
+    public static final String DEATH_JOIE = "joie";
+    public static final String DEATH_FAIM = "faim";
+    public static final String DEATH_FATIGUE = "fatigue";
+    public static final String DEATH_PROPRETE = "propreté";
 
     // Utils variables:
     private static boolean ProgramRun = true;
