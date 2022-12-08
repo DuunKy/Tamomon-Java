@@ -2,6 +2,13 @@ package data;
 
 public class Data {
 
+    // Data for variables of TAMAMON Actions:
+    public static final int NOURRIR = 1;
+    public static final int SORTIR = 2;
+    public static final int LAVER = 1;
+    public static final int CARESSER = 1;
+
+    // Utils variables:
     private boolean menuOn = true;
 
     private boolean sousMenuOn;
