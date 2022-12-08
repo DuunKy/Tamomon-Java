@@ -20,7 +20,7 @@
     - MalusForce : 0
     - NbTour : 0
 
-## ❌ Update des vairables [ ] 
+## ❌ Update des vairables [ Albéric ] 
 
 * creer une fonction update() qui va mettre à jour les variables à chaque tours
 
@@ -34,7 +34,7 @@
         - fatigue++
         - propreté--
     * Action de contraintes :
-        - force = NbTours - MalusForce
+        - force = NbTours/10 - MalusForce
         - si faim>7 -> joie--, fatigue++, energy--
         - si fatigue>7 -> MalusForce++, energy--
         - si propreté<3 -> joie--, energy--, force--
