@@ -66,6 +66,32 @@ public class Texte {
             ColorBase.YELLOW + "\n 5. Sauvegarder" +
             ColorBase.RED + "\n 6. Quitter\n" + ColorBase.RESET;
 
+    // UPDATE PRINT:
+        // ACTION:
+    public static final String ACTION_NOURRIR = "Vous avez nourri votre Tamamon, il est rassasié et a pu réparer ses mauvais coups!";
+    public static final String ACTION_SORTIR = "Vous avez sorti votre Tamamon, il est bien fatigué mais il est heureux !";
+    public static final String ACTION_LAVER = "Vous avez lavé votre Tamamon, il est propre !";
+    public static final String ACTION_CARESSER = "Vous avez caressé votre Tamamon, il est reposé et a repris de l'énergie !";
+        // DEFAULT:
+    public static final String DEFAULT_LOOSE_ENERGY = "Vous avez perdu de l'énergie: ";
+    public static final String DEFAULT_LOOSE_JOIE = "Vous avez été attristé: ";
+    public static final String DEFAULT_LOOSE_FAIM = "Vous avez faim: ";
+    public static final String DEFAULT_LOOSE_FATIGUE = "Vous êtes fatigué: ";
+    public static final String DEFAULT_LOOSE_PROPRETE = "Vous vous êtes sali: ";
+    public static final String DEFAULT_LOOSE_FORCE = "Vous avez perdu de la force: ";
+    public static final String DEFAULT_LOOSE_MALUSFORCE = "Vous avez perdu de la force à cause d'un mauvais coup: ";
+        // RANDOM:
+    public static final String RANDOM_LOOSE_FAIM = "Vous avez un soudaint creu: ";
+    public static final String RANDOM_LOOSE_FATIGUE = "Vous avez un coup de barre: ";
+    public static final String RANDOM_LOOSE_PROPRETE = "Cette journée vous a bien sali: ";
+        // CONTRAINTS:
+    public static final String CONTRAINT_FAIM = " Vous avez trop faim ! Vous êtes fatigué, Vous êtes dans une mauvaise passe et vous avez perdu de l'énergie !";
+    public static final String CONTRAINT_FATIGUE = " Vous êtes trop fatigué ! Vous avez pris un sale coup, et vous avez perdu de l'énergie !";
+    public static final String CONTRAINT_PROPRETE = " Vous êtes trop sale ! Vous êtes attristé, vous de l'énergie et de la force !";
+    public static final String CONTRAINT_JOIE = " Vous êtes trop triste ! Vous avez un coup de barre, vous avez perdu de l'énergie et de la force !";
+
     //Utils:
     public static final String SEPARATOR = "\n--------------------------------------------------------------------------------\n";
+    public static final String DAY = "Jour ";
+
 }

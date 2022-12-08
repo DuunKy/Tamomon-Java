@@ -19,24 +19,24 @@ public class Game {
 
         System.out.println(Texte.SEPARATOR);
 
-        System.out.println(ColorBase.BOLD + ColorBase.BLUE +  perso.getName() + " : " + perso.getPhysique() + ColorBase.RESET);
+        System.out.println(ColorBase.BOLD + ColorBase.BLUE +  perso.getName() + " : " + perso.getPhysique() + "          " + Texte.DAY + getNbTour() + ColorBase.RESET);
 
         System.out.println(Texte.SEPARATOR);
 
         System.out.print(Texte.ENERGY);
-        Color.DynamicColorUp(3, 7, 10, getEnergy());
+        Color.DynamicColorUp(3, 10, getEnergy());
         System.out.print(Texte.FORCE);
-        Color.DynamicColorUp(3, 7, 10, getForce());
+        Color.DynamicColorUp(3, 10, getForce());
         System.out.print(Texte.JOIE);
-        Color.DynamicColorUp(3, 7, 10, getJoie());
+        Color.DynamicColorUp(3, 10, getJoie());
         System.out.print(Texte.FAIM);
-        Color.DynamicColorDown(7, 5, 3, getFaim());
+        Color.DynamicColorDown(7, 3, getFaim());
         System.out.print(Texte.FATIGUE);
-        Color.DynamicColorDown(7, 5, 3, getFatigue());
+        Color.DynamicColorDown(7, 3, getFatigue());
         System.out.print(Texte.PROPRETE);
-        Color.DynamicColorUp(3, 7, 10, getProprete());
+        Color.DynamicColorUp(3, 10, getProprete());
         System.out.print(Texte.MALUSFORCE);
-        Color.DynamicColorDown(7, 5, 1, getMalusForce());
+        Color.DynamicColorDown(7, 1, getMalusForce());
 
         System.out.println(Texte.SEPARATOR);
 
@@ -48,18 +48,24 @@ public class Game {
     }
 
     private static void update() {
+
         defaultAction();
         randomAction();
         contraintAction();
+
         setNbTour(getNbTour() + 1);
+
+        System.out.println(Texte.SEPARATOR + ColorBase.RESET);
 
     }
 
     private static void defaultAction() {
         setFaim(getFaim() + 1);
+        System.out.println(Texte.DEFAULT_LOOSE_FAIM + " +1");
         setFatigue(getFatigue() + 1);
+        System.out.println(Texte.DEFAULT_LOOSE_FATIGUE + " +1");
         setProprete(getProprete() - 1);
-        setNbTour(getNbTour() + 1);
+        System.out.println(Texte.DEFAULT_LOOSE_PROPRETE + " -1");
     }
 
     private static void randomAction() {
@@ -67,12 +73,15 @@ public class Game {
         switch (random) {
             case 0:
                 setFaim(getFaim() + 1);
+                System.out.println(Texte.RANDOM_LOOSE_FAIM + " +1");
                 break;
             case 1:
                 setFatigue(getFatigue() + 1);
+                System.out.println(Texte.RANDOM_LOOSE_FATIGUE + " +1");
                 break;
             case 2:
                 setProprete(getProprete() - 1);
+                System.out.println(Texte.RANDOM_LOOSE_PROPRETE + " -1");
                 break;
         }
     }
@@ -84,20 +93,24 @@ public class Game {
             setJoie(getJoie() - 1);
             setFatigue(getFatigue() + 1);
             setEnergy(getEnergy() - 1);
+            System.out.println(Texte.CONTRAINT_FAIM + " -1, +1, -1");
         }
         if (getFatigue() > 7) {
             setMalusForce(getMalusForce() + 1);
             setEnergy(getEnergy() - 1);
+            System.out.println(Texte.CONTRAINT_FATIGUE + " +1, -1");
         }
         if (getProprete() < 3) {
             setJoie(getJoie() - 1);
             setEnergy(getEnergy() - 1);
             setForce(getForce() - 1);
+            System.out.println(Texte.CONTRAINT_PROPRETE + " -1, -1, -1");
         }
         if (getJoie() < 3) {
             setFatigue(getFatigue() + 1);
             setEnergy(getEnergy() - 1);
             setForce(getForce() - 1);
+            System.out.println(Texte.CONTRAINT_JOIE + " +1, -1, -1");
         }
     }
 }

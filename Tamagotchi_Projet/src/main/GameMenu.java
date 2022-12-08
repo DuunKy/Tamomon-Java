@@ -1,5 +1,6 @@
 package main;
 
+import data.ColorBase;
 import data.Texte;
 
 import static action.Action.*;
@@ -14,6 +15,7 @@ public class GameMenu {
 
         int choix = returnUnChiffre();
 
+        System.out.println(ColorBase.RED + Texte.SEPARATOR);
         switch (choix) {
             case 1:
                 nourrir();
@@ -34,5 +36,6 @@ public class GameMenu {
                 quit();
                 break;
         }
+
     }
 }
