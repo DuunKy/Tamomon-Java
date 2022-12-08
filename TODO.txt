@@ -1,0 +1,41 @@
+Init des variables: [ ]
+    - Name : "none"
+    - Physique : "none"
+    - Energy : 10
+    - Force : 5
+    - Joie : 10
+    - Faim : 0
+    - Fatigue : 0
+    - Propreté : 10
+    - MalusForce : 0
+
+Update des vairables [ ]
+
+-> creer une fonction update() qui va mettre à jour les variables à chaque tours
+
+    -> Action Par défaut :
+        - faim++
+        - fatigue++
+        - propreté--
+        - nbtour++
+    -> Action Random (1 au choix):
+        - faim++
+        - fatigue++
+        - propreté--
+
+Refaire le fichier de save aux normes: [ Albéric ]
+    Nom:
+    Energy:
+    Force:
+    Joie:
+    Faim:
+    Fatigue:
+    Proprete:
+    MalusForce:
+    Physique:
+
+    ajouter :
+        Nbtour: (penser a parser les parametres suivant des parametres Personnages)
+
+
+
