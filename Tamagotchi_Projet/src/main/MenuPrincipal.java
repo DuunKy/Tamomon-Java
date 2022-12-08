@@ -1,5 +1,6 @@
 package main;
 
+import data.ColorBase;
 import data.Texte;
 import utilitaires.Utilitaires;
 
@@ -12,7 +13,7 @@ import static utilitaires.Utilitaires.quit;
 public class MenuPrincipal {
 
     public static int menuPrincipal() {
-        System.out.println(Texte.MENUPRINCIPAL);
+        System.out.println(ColorBase.BLUE + Texte.MENUPRINCIPAL + ColorBase.RESET);
         return Utilitaires.returnUnChiffre();
     }
 

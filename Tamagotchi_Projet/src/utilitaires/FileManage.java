@@ -1,5 +1,7 @@
 package utilitaires;
 
+import data.ColorBase;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -15,14 +17,14 @@ public class FileManage {
         File file = new File(path);
         try {
             if (file.createNewFile()) {
-                System.out.println("File created: " + file.getName());
+                System.out.println(ColorBase.GRAY + ColorBase.ITALIC + "File created: " + file.getName() + ColorBase.RESET);
             } else {
-                System.out.println("File already exists.");
+                System.out.println(ColorBase.ERROR + ColorBase.ITALIC + "File already exists." + ColorBase.RESET);
             }
-            System.out.println("File created: " + file.getName());
+            System.out.println(ColorBase.GRAY + ColorBase.ITALIC + "File created: " + file.getName() + ColorBase.RESET);
         }
         catch(Exception e) {
-            System.out.println("Error: " + e);
+            System.out.println(ColorBase.ERROR + ColorBase.ITALIC + "Error: " + e + ColorBase.RESET);
         }
         return file;
     }
@@ -37,7 +39,7 @@ public class FileManage {
             sc.close();
         }
         catch(Exception e) {
-            System.out.println("Error: " + e);
+            System.out.println(ColorBase.ERROR + ColorBase.ITALIC + "Error: " + e + ColorBase.RESET);
         }
         return lines;
     }
@@ -54,7 +56,7 @@ public class FileManage {
             myWriter.close();
         }
         catch(Exception e) {
-            System.out.println("Error: " + e);
+            System.out.println(ColorBase.ERROR + ColorBase.ITALIC + "Error: " + e + ColorBase.RESET);
         }
     }
 

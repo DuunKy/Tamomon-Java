@@ -1,5 +1,6 @@
 package model;
 
+import data.ColorBase;
 import data.Data;
 import data.Texte;
 import utilitaires.FileManage;
@@ -15,16 +16,16 @@ public class Creation {
 
     public static void menuCreation(Data data, Personnage perso) {
         Physique physique = new Physique();
-        System.out.println(Texte.NOMTAMAMON);
+        System.out.println(ColorBase.BLUE + ColorBase.BOLD + ColorBase.UNDERLINE + Texte.NOMTAMAMON);
         perso.setName(Utilitaires.getStringFromUser());
 
         //System.out.println(perso.getName());
 
         do {
-            System.out.println(Texte.CHOIXTAMAMON);
+            System.out.println(ColorBase.BLUE + ColorBase.BOLD + ColorBase.UNDERLINE + Texte.CHOIXTAMAMON + ColorBase.RESET);
             for (Integer id : physique.getId()) {
-                System.out.print(Texte.CHOIX);
-                System.out.println(id + " : " + physique.getModel().get(id));
+                System.out.print(ColorBase.BLUE + Texte.CHOIX);
+                System.out.println(ColorBase.CYAN + id + " : " + physique.getModel().get(id) + ColorBase.RESET);
             }
             int choix = Utilitaires.returnUnChiffre();
             if (choix < physique.getId().size()) {
@@ -33,19 +34,19 @@ public class Creation {
                 data.setSousMenuOn(false);
             } else {
                 clearScreen();
-                System.out.println(Texte.ERREUR);
+                System.out.println(ColorBase.ERROR + Texte.ERREUR);
             }
 
             //create the save file and write all perso's parameters in
 
-            System.out.println(Utilitaires.persoToArray());
+            //System.out.println(Utilitaires.persoToArray());
 
             File save = FileManage.createFile(Texte.SAVEPATH);
             FileManage.writeInFile(save, Utilitaires.persoToArray());
 
             clearScreen();
-            System.out.println(Texte.SAVETAMACREATE);
-            System.out.println(perso.getName() + " : " + perso.getPhysique());
+            System.out.println(ColorBase.GREEN + ColorBase.BOLD + ColorBase.UNDERLINE + Texte.SAVETAMACREATE);
+            System.out.println(ColorBase.BLUE + perso.getName() + " : " + perso.getPhysique() + ColorBase.RESET);
             setOnGame(false);
 
 

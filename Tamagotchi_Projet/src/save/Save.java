@@ -1,5 +1,6 @@
 package save;
 
+import data.ColorBase;
 import data.Texte;
 import model.Personnage;
 
@@ -20,16 +21,16 @@ public class Save {
             ArrayList<String> SaveArray = readFile(save);
             Personnage perso = arrayToPerso(SaveArray);
             if (main.Lancement.getPerso() != null) {
-                System.out.println(Texte.SAVETAMAFOUND);
+                System.out.println(ColorBase.GREEN + Texte.SAVETAMAFOUND + ColorBase.RESET);
                 setOnGame(true);
                 game();
             } else {
-                System.out.println(Texte.SAVETAMANOTFOUND);
+                System.out.println(ColorBase.RED + Texte.SAVETAMANOTFOUND + ColorBase.RESET);
                 setOnGame(false);
             }
             return perso;
         } else {
-            System.out.println(Texte.SAVETAMANOTFOUND);
+            System.out.println(ColorBase.RED + Texte.SAVETAMANOTFOUND + ColorBase.RESET);
             setOnGame(false);
             return null;
         }

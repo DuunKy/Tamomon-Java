@@ -44,7 +44,7 @@ public class Utilitaires {
         parameters.add(Texte.SAVE_INDEX_PHYSIQUE + Personnage.getPhysique());
         parameters.add(Texte.SAVE_INDEX_NBTOUR + Data.getNbTour());
 
-        System.out.println(parameters);
+        //System.out.println(parameters);
 
         return parameters;
     }
@@ -53,7 +53,7 @@ public class Utilitaires {
 
         parameters = getValueOfSaveArray(parameters);
 
-        System.out.println(parameters);
+        //System.out.println(parameters);
         Data.setNbTour(Integer.parseInt(parameters.get(9)));
 
         return new Personnage(
