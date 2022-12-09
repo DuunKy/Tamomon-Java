@@ -6,7 +6,7 @@ import utilitaires.Utilitaires;
 import static utilitaires.Utilitaires.quit;
 
 public class CombatBoucle {
-    public static void combatBoucle() {
+    public  void combatBoucle() {
         System.out.println(Texte.COMBAT);
 
         int choix = Utilitaires.returnUnChiffre();

@@ -25,6 +25,7 @@ public class Combat {
     public static void combat(){
         int ennemyRandom = Utilitaires.random(0,ennemies.size());
         System.out.println(Texte.AFFRONTEMENT + ennemies.get("Ennemy"+ennemyRandom).getName());
+        new CombatBoucle().combatBoucle();
     }
 
 }

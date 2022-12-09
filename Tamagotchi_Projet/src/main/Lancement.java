@@ -1,5 +1,6 @@
 package main;
 
+import action.Combat.Combat;
 import data.Data;
 import model.Personnage;
 import  utilitaires.Utilitaires;
@@ -41,6 +42,7 @@ public class Lancement {
 
     // Start the game:
     public static void lancement(){
+        new Combat().createEnnemies();
         do{
             if (isOnGame()) {
                 game();
