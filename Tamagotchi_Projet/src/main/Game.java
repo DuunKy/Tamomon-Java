@@ -37,6 +37,8 @@ public class Game {
 
         System.out.println(Texte.SEPARATOR);
 
+        new Combat().createEnnemies();
+
         gameMenu();
 
         update();
