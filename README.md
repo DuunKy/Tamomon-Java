@@ -1,6 +1,6 @@
 # Tamomon-Java
 
-- Fait par : Albéric | alberic.walshdeserrant@ynov.com & Duncan | duncan.lhuillery@ynov.com
+- Fait par : [Albéric] | alberic.walshdeserrant@ynov.com & [Duncan] | duncan.lhuillery@ynov.com  [B1B]
 
 # Gestion save:
 - Chaques lignes sont un parametre
