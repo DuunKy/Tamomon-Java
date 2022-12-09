@@ -1,8 +1,8 @@
 # Tamomon-Java
 
-Fait par : Albéric | alberic.walshdeserrant@ynov.com & Duncan | duncan.lhuillery@ynov.com
+- Fait par : Albéric | alberic.walshdeserrant@ynov.com & Duncan | duncan.lhuillery@ynov.com
 
-# gestion save:
+# Gestion save:
 - Chaques lignes sont un parametre
 
 # TODO LIST:
@@ -10,23 +10,23 @@ Fait par : Albéric | alberic.walshdeserrant@ynov.com & Duncan | duncan.lhuiller
 - Remplir ds les crochets les noms
 - ajouter ✔ au TODO fait et ❌ au non fait
 
-## ❌ Si le temps le permet, faire un systeme de difficulté: [ ]
+## ❌ Si le temps le permet, faire un systeme de difficulté: 
 
    *  modifier ds data les retrait et ajou de points en fonction de la difficulté
    *  rendre plus fort les ennemys
 
-## ✔ Ajout couleur qui facilite la lisibilité: [ ]
+## ✔ Ajout couleur qui facilite la lisibilité: 
 
    *  func DynamicColor ✔
    *  func Simple Color ✔ 
    *  assigner des couleurs aux textes 🔁
 
-## ✔ Gestion de la mort: [ ]
+## ✔ Gestion de la mort: 
 
    *  Mettre un minimum aux variables car elles descendent en négatif sans rien faire
    *  creer une fonction mort qui propose de réssucité si on a 7 Energy ou qui propose de recommencer
 
-## ✔ Init des variables: [ Duncan ] 
+## ✔ Init des variables: 
     - Name : "none"
     - Physique : "none"
     - Energy : 10
@@ -38,7 +38,7 @@ Fait par : Albéric | alberic.walshdeserrant@ynov.com & Duncan | duncan.lhuiller
     - MalusForce : 0
     - NbTour : 0
 
-## ✔ Update des vairables [ Albéric ] 
+## ✔ Update des vairables 
 
 * creer une fonction update() qui va mettre à jour les variables à chaque tours
 
@@ -58,7 +58,7 @@ Fait par : Albéric | alberic.walshdeserrant@ynov.com & Duncan | duncan.lhuiller
         - si propreté<3 -> joie--, energy--, force--
         - si joie<3 -> fatigue++, ernergy--, force--
 
-## ✔ Refaire le fichier de save aux normes: [ Albéric ] 
+## ✔ Refaire le fichier de save aux normes: 
     Nom:
     Energy:
     Force:
@@ -74,7 +74,7 @@ Fait par : Albéric | alberic.walshdeserrant@ynov.com & Duncan | duncan.lhuiller
 
 ## ✔ Creer les fonctions d'action pour: 
 
-* Super Fonction qui sera hérité des autres fonction d'action [ Albéric ]:
+* Super Fonction qui sera hérité des autres fonction d'action:
     
     ```
     Action(e) {
@@ -82,17 +82,17 @@ Fait par : Albéric | alberic.walshdeserrant@ynov.com & Duncan | duncan.lhuiller
     }
     ```
 
-     - Nourrir (1 Energy ) [ Albéric ]:
+     - Nourrir (1 Energy ) :
           - Faim = 0
           - Malus --
 
-     - Sortir (2 Energy ) [ Duncan ]:
+     - Sortir (2 Energy ) :
           - Fatigue ++
           - Joie = 10
 
-    - Laver (1 Energy ) [ Albéric ]:
+    - Laver (1 Energy ) :
         - Proprete = 10
 
-    - Caresser (1 Energy) [ Duncan ]:
+    - Caresser (1 Energy) :
         - energy = force + joie - faim - fatigue
         - fatigue = 0
