@@ -1,11 +1,9 @@
 package action.Combat;
 
 import data.Texte;
-import main.Lancement;
-import model.Personnage;
 import utilitaires.Utilitaires;
 
-import static main.Lancement.*;
+import static main.Lancement.ennemy1;
 
 public class MenuCombat {
     public static void choixCombattant(){
@@ -15,18 +13,20 @@ public class MenuCombat {
                 System.out.println(Texte.AFFRONTEMENT + ennemy1.getName());
                 break;
             case 1:
-                System.out.println(Texte.AFFRONTEMENT + ennemy2.getName());
+                System.out.println(Texte.AFFRONTEMENT);
                 break;
             case 2:
-                System.out.println(Texte.AFFRONTEMENT + ennemy3.getName());
+                System.out.println(Texte.AFFRONTEMENT);
                 break;
             case 3:
-                System.out.println(Texte.AFFRONTEMENT + ennemy4.getName());
+                System.out.println(Texte.AFFRONTEMENT);
                 break;
             case 4:
-                System.out.println(Texte.AFFRONTEMENT + ennemy5.getName());
+                System.out.println(Texte.AFFRONTEMENT);
+                break;
+            case 5:
+                System.out.println(Texte.AFFRONTEMENT);
                 break;
         }
-        CombatBoucle.combatBoucle();
     }
 }
