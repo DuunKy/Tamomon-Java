@@ -14,7 +14,7 @@ public class Physique {
 
 
     public Physique() {
-        File file = openFile("src/model/model.txt");
+        File file = openFile("C:\\Users\\Lhuillery\\Desktop\\ExerciceJava\\Tamomon-Java\\Tamagotchi_Projet\\src\\model\\model.txt");
         this.model = readFile(file);
         for (int i = 0; i < model.size(); i++) {
             id.add(i);

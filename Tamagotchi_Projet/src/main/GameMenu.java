@@ -29,16 +29,19 @@ public class GameMenu {
                 caresser();
                 break;
             case 5:
+                combat();
+            case 6:
                 saveGame();
                 gameMenu();
                 break;
-            case 6:
+            case 7:
                 quit();
                 break;
             default:
                 System.out.println(ColorBase.YELLOW + Texte.PASOUF + ColorBase.RED);
                 break;
         }
-
     }
+
+
 }

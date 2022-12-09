@@ -12,6 +12,9 @@ import static main.Lancement.setOnGame;
 
 
 public class Utilitaires {
+    public static int randomFiveToTen = (int) (Math.random() * (10 - 5 + 1) + 5);
+    public static int randomZeroToFive = (int) (Math.random() * (5 + 1));
+
     public static int returnUnChiffre() {
         Scanner sc = new Scanner(System.in);
         int i = 0;
@@ -103,4 +106,5 @@ public class Utilitaires {
         }
 
     }
+
 }

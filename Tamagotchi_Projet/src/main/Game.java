@@ -38,8 +38,6 @@ public class Game {
 
         gameMenu();
 
-
-
         update();
     }
 }

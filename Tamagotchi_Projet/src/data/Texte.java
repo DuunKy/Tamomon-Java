@@ -1,5 +1,7 @@
 package data;
 
+import save.Save;
+
 public class Texte {
     public static final String MENUPRINCIPAL = "Bienvenu sur Tamamon !" +
             "\n 1. Création Tamamon. " +
@@ -14,7 +16,8 @@ public class Texte {
     public static final String CHOIX = "Choix ";
     public static final String PASOUF = "Okay ! Pas ouf..";
     public static final String ERREUR = "Une erreur s'est produite réessayez !\n";
-    public static final String SAVEPATH = "src/save/save.txt";
+    public static final String SAVEPATH = "save.txt";
+
     public static final String SAVETAMAFOUND = "Tamagochi trouvé !";
     public static final String SAVETAMANOTFOUND = "Pas de tamagochi trouvé ! \n Essayez d'en créer un !\n";
     public static final String SAVETAMACREATE = "Tamagochi créé avec succès! \n Vous pouvez maintenant le nourrir, le promener, le laver et le carresser !\n";
@@ -45,8 +48,9 @@ public class Texte {
             "\n 2. Sortir " +
             "\n 3. Laver" +
             "\n 4. Carresser" +
-            ColorBase.YELLOW + "\n 5. Sauvegarder" +
-            ColorBase.RED + "\n 6. Quitter\n" + ColorBase.RESET;
+            "\n 5. Combat" +
+            ColorBase.YELLOW + "\n 6. Sauvegarder" +
+            ColorBase.RED + "\n 7. Quitter\n" + ColorBase.RESET;
 
     // UPDATE PRINT:
         // ACTION:
@@ -71,6 +75,22 @@ public class Texte {
     public static final String CONTRAINT_FATIGUE = "Vous êtes trop fatigué ! Vous avez pris un sale coup, et vous avez perdu de l'énergie !";
     public static final String CONTRAINT_PROPRETE = "Vous êtes trop sale ! Vous êtes attristé, vous de l'énergie et de la force !";
     public static final String CONTRAINT_JOIE = "Vous êtes trop triste ! Vous avez un coup de barre, vous avez perdu de l'énergie et de la force !";
+    //COMBATS PRINT:
+    public static final String AFFRONTEMENT = "Vous allez affronté : ";
+
+    public static final String COMBAT = ColorBase.UNDERLINE + ColorBase.BOLD + ColorBase.BLUE + "Que voulez-vous faire ?" + ColorBase.RESET + ColorBase.GREEN +
+            "\n 1. Attaquer" +
+            "\n 2. Défendre" +
+            "\n 3. Fuir" +
+            ColorBase.RED + "\n 4. Quitter\n" + ColorBase.RESET;
+
+    public static final String COMBAT_ATTAQUE = "Vous avez attaqué votre adversaire !";
+    public static final String COMBAT_DEFENSE = "Vous avez défendu votre adversaire !";
+    public static final String COMBAT_FUIR = "Vous avez fui votre adversaire !";
+
+    public static final String COMBAT_LOOSE = "Vous avez perdu !";
+    public static final String COMBAT_WIN = "Vous avez gagné !";
+
     //DEATH PRINT:
     public static final String DEATH_FAIM = "Vous êtes mort de faim !";
     public static final String DEATH_FATIGUE = "Vous êtes mort de fatigue !";

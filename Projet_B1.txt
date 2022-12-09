@@ -37,7 +37,7 @@ nbtour++
 
 
 A chaque tour, une action automatique random va avoir lieu
-Faim++ ou fatigue++ ou propriété--
+Faim++ ou fatigue++ ou propreté--
 
 
 Action de contraintes:

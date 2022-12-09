@@ -25,6 +25,8 @@ public class Personnage {
         Physique = physique;
     }
 
+
+
     public static int getEnergy() {return Energy;}
     public static void setEnergy(int energy) { Energy = energy;}
 
