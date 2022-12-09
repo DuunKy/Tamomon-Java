@@ -97,3 +97,6 @@
     - Caresser (1 Energy) :
         - energy = force + joie - faim - fatigue
         - fatigue = 0
+## Combats :
+
+* ✔ Creer une fonction qui va générer un ennemi aléatoire

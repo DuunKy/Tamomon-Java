@@ -1,5 +1,6 @@
 package main;
 
+import action.Combat.Combat;
 import data.Color;
 import data.ColorBase;
 import data.Texte;
@@ -35,6 +36,8 @@ public class Game {
         Color.DynamicColorDown(7, 1, getMalusForce());
 
         System.out.println(Texte.SEPARATOR);
+
+        new Combat().createEnnemies();
 
         gameMenu();
 

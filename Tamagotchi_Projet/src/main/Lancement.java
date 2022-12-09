@@ -24,7 +24,6 @@ public class Lancement {
     // Base Variables Init
     public static Data data;
     public static Personnage perso;
-    public static Personnage ennemy1,ennemy2,ennemy3,ennemy4,ennemy5;
 
     public static Personnage getPerso() {
         return perso;
@@ -33,11 +32,6 @@ public class Lancement {
     public Lancement() {
         data = new Data();
         perso = new Personnage(10,0,10,0,0,10,0, "none", "none");
-        ennemy1 = new Personnage(Utilitaires.randomFiveToTen,0,Utilitaires.randomFiveToTen,Utilitaires.randomZeroToFive,Utilitaires.randomZeroToFive,Utilitaires.randomFiveToTen,Utilitaires.randomZeroToFive, "José le rigolo", "┌∩┐(◣_◢)┌∩┐");
-        ennemy2 = new Personnage(Utilitaires.randomFiveToTen,0,Utilitaires.randomFiveToTen,Utilitaires.randomZeroToFive,Utilitaires.randomZeroToFive,Utilitaires.randomFiveToTen,Utilitaires.randomZeroToFive, "Patrick le fatigué", "┌∩┐(◣_◢)┌∩┐");
-        ennemy3 = new Personnage(Utilitaires.randomFiveToTen,0,Utilitaires.randomFiveToTen,Utilitaires.randomZeroToFive,Utilitaires.randomZeroToFive,Utilitaires.randomFiveToTen,Utilitaires.randomZeroToFive, "Jonathan", "┌∩┐(◣_◢)┌∩┐");
-        ennemy4 = new Personnage(Utilitaires.randomFiveToTen,0,Utilitaires.randomFiveToTen,Utilitaires.randomZeroToFive,Utilitaires.randomZeroToFive,Utilitaires.randomFiveToTen,Utilitaires.randomZeroToFive, "Yo", "┌∩┐(◣_◢)┌∩┐");
-        ennemy5 = new Personnage(Utilitaires.randomFiveToTen,0,Utilitaires.randomFiveToTen,Utilitaires.randomZeroToFive,Utilitaires.randomZeroToFive,Utilitaires.randomFiveToTen,Utilitaires.randomZeroToFive, "Yi", "┌∩┐(◣_◢)┌∩┐");
     }
 
     public static void init() {
