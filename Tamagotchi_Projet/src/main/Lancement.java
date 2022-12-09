@@ -22,9 +22,9 @@ public class Lancement {
     private static boolean OnGame;
 
     // Base Variables Init
-    static Data data;
-    static Personnage perso;
-    public Personnage ennemy1,ennemy2,ennemy3,ennemy4,ennemy5;
+    public static Data data;
+    public static Personnage perso;
+    public static Personnage ennemy1,ennemy2,ennemy3,ennemy4,ennemy5;
 
     public static Personnage getPerso() {
         return perso;

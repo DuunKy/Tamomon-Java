@@ -16,7 +16,10 @@ public class Texte {
     public static final String CHOIX = "Choix ";
     public static final String PASOUF = "Okay ! Pas ouf..";
     public static final String ERREUR = "Une erreur s'est produite réessayez !\n";
-    public static final String SAVEPATH = "save.txt";
+    // PATH:
+    public static final String SAVEPATH = "src/save/save.txt";
+    public static final String PHYSIQUEPATH = "src/model/model.txt";
+    // SAVE:
 
     public static final String SAVETAMAFOUND = "Tamagochi trouvé !";
     public static final String SAVETAMANOTFOUND = "Pas de tamagochi trouvé ! \n Essayez d'en créer un !\n";

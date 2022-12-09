@@ -8,8 +8,7 @@ import utilitaires.Utilitaires;
 
 import java.io.File;
 
-import static main.Lancement.init;
-import static main.Lancement.setOnGame;
+import static main.Lancement.*;
 import static utilitaires.Utilitaires.clearScreen;
 
 
@@ -19,7 +18,7 @@ public class Creation {
         init() ;
         Physique physique = new Physique();
         System.out.println(ColorBase.BLUE + ColorBase.BOLD + ColorBase.UNDERLINE + Texte.NOMTAMAMON);
-        Personnage.setName(Utilitaires.getStringFromUser());
+        perso.setName(Utilitaires.getStringFromUser());
 
         //System.out.println(perso.getName());
 

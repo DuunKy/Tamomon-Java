@@ -16,16 +16,8 @@ import static utilitaires.Utilitaires.persoToArray;
 public class Save {
 
     public static Personnage menuSauvegarde() {
-        String absolute = null;
-        try {
-            File save = new File("save.txt");
-
-            absolute = save.getAbsolutePath();
-        } catch (Exception e) {
-            System.err.println(e.getMessage());
-        }
-        if (fileExist(absolute)) {
-            File save = openFile(absolute);
+        if (fileExist(Texte.SAVEPATH)) {
+            File save = openFile(Texte.SAVEPATH);
             ArrayList<String> SaveArray = readFile(save);
             Personnage perso = arrayToPerso(SaveArray);
             if (main.Lancement.getPerso() != null) {
@@ -47,16 +39,13 @@ public class Save {
     public static void saveGame() {
 
         ArrayList<String> parameters = persoToArray();
-        String absolute = null;
         try {
-            File save = new File("save.txt");
-
-            absolute = save.getAbsolutePath();
+            File save = new File(Texte.SAVEPATH);
         } catch (Exception e) {
             System.err.println(e.getMessage());
         }
 
-        File saveFile = openFile(absolute);
+        File saveFile = openFile(Texte.SAVEPATH);
         writeInFile(saveFile, parameters);
 
 

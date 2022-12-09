@@ -1,5 +1,7 @@
 package model;
 
+import data.Texte;
+
 import java.io.File;
 import java.util.ArrayList;
 
@@ -14,7 +16,7 @@ public class Physique {
 
 
     public Physique() {
-        File file = openFile("C:\\Users\\Lhuillery\\Desktop\\ExerciceJava\\Tamomon-Java\\Tamagotchi_Projet\\src\\model\\model.txt");
+        File file = openFile(Texte.PHYSIQUEPATH);
         this.model = readFile(file);
         for (int i = 0; i < model.size(); i++) {
             id.add(i);
