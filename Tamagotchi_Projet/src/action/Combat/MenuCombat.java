@@ -26,5 +26,6 @@ public class MenuCombat {
                 System.out.println(Texte.AFFRONTEMENT);
                 break;
         }
+        CombatBoucle.combatBoucle();
     }
 }
