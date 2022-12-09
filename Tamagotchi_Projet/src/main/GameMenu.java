@@ -4,6 +4,7 @@ import data.ColorBase;
 import data.Texte;
 
 import static action.Action.*;
+import static action.Combat.Combat.combat;
 import static save.Save.saveGame;
 import static utilitaires.Utilitaires.quit;
 import static utilitaires.Utilitaires.returnUnChiffre;
