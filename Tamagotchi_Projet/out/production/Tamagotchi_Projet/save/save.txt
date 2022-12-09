@@ -1,4 +1,4 @@
-Noms: gg
+Noms: jj
 Energy: 10
 Force: 0
 Joie: 10
@@ -6,5 +6,5 @@ Faim: 0
 Fatigue: 0
 Proprete: 10
 MalusForce: 0
-Physique: ٩(̾●̮̮̃̾•̃̾)۶
+Physique: ⊂(◉‿◉)つ
 Nombre de tours: 0
