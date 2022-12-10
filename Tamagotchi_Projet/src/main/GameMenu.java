@@ -32,10 +32,12 @@ public class GameMenu {
             case 5:
                 new Combat().combat();
             case 6:
+                new Combat().pvp();
+            case 7:
                 saveGame();
                 gameMenu();
                 break;
-            case 7:
+            case 8:
                 quit();
                 break;
             default:

@@ -1,5 +1,6 @@
 package data;
 
+import action.Combat.Combat;
 import save.Save;
 
 public class Texte {
@@ -52,8 +53,9 @@ public class Texte {
             "\n 3. Laver" +
             "\n 4. Carresser" +
             "\n 5. Combat" +
-            ColorBase.YELLOW + "\n 6. Sauvegarder" +
-            ColorBase.RED + "\n 7. Quitter\n" + ColorBase.RESET;
+            "\n 6. PvP" +
+            ColorBase.YELLOW + "\n 7. Sauvegarder" +
+            ColorBase.RED + "\n 8. Quitter\n" + ColorBase.RESET;
 
     // UPDATE PRINT:
         // ACTION:
@@ -69,30 +71,48 @@ public class Texte {
     public static final String DEFAULT_LOOSE_PROPRETE = "Vous vous êtes sali: ";
     public static final String DEFAULT_LOOSE_FORCE = "Vous avez perdu de la force: ";
     public static final String DEFAULT_LOOSE_MALUSFORCE = "Vous avez perdu de la force à cause d'un mauvais coup: ";
+
+
         // RANDOM:
     public static final String RANDOM_LOOSE_FAIM = "Vous avez un soudaint creu: ";
     public static final String RANDOM_LOOSE_FATIGUE = "Vous avez un coup de barre: ";
     public static final String RANDOM_LOOSE_PROPRETE = "Cette journée vous a bien sali: ";
+
+
         // CONTRAINTS:
     public static final String CONTRAINT_FAIM = "Vous avez trop faim ! Vous êtes fatigué, Vous êtes dans une mauvaise passe et vous avez perdu de l'énergie !";
     public static final String CONTRAINT_FATIGUE = "Vous êtes trop fatigué ! Vous avez pris un sale coup, et vous avez perdu de l'énergie !";
     public static final String CONTRAINT_PROPRETE = "Vous êtes trop sale ! Vous êtes attristé, vous de l'énergie et de la force !";
     public static final String CONTRAINT_JOIE = "Vous êtes trop triste ! Vous avez un coup de barre, vous avez perdu de l'énergie et de la force !";
+
+
     //COMBATS PRINT:
     public static final String AFFRONTEMENT = "Vous allez affronté : ";
+    public static final String VERSUS = ColorBase.ITALIC+ColorBase.UNDERLINE+ColorBase.RED+"  VS  "+ColorBase.RESET;
 
-    public static final String COMBAT = ColorBase.UNDERLINE + ColorBase.BOLD + ColorBase.BLUE + "Que voulez-vous faire ?" + ColorBase.RESET + ColorBase.GREEN +
-            "\n 1. Attaquer" +
-            "\n 2. Défendre" +
-            "\n 3. Fuir" +
-            ColorBase.RED + "\n 4. Quitter\n" + ColorBase.RESET;
+    public static final String COMBAT = ColorBase.UNDERLINE + ColorBase.BOLD + ColorBase.BLUE + "Que voulez-vous faire ?" + ColorBase.RESET +
+            ColorBase.RED + "\n 1. Attaquer" + ColorBase.RESET +
+            ColorBase.BLUE+"\n 2. Défendre" + ColorBase.RESET +
+            ColorBase.YELLOW+"\n 3. Fuir" + ColorBase.RESET;
 
-    public static final String COMBAT_ATTAQUE = "Vous avez attaqué votre adversaire !";
-    public static final String COMBAT_DEFENSE = "Vous avez défendu votre adversaire !";
+    public static final String COMBAT_ATTAQUE = "Vous avez attaqué votre adversaire !"+"\n";
+    public static final String COMBAT_DEFENSE = "Vous vous êtes défendu contre votre  adversaire !";
     public static final String COMBAT_FUIR = "Vous avez fui votre adversaire !";
 
-    public static final String COMBAT_LOOSE = "Vous avez perdu !";
+    public static final String COMBAT_LOSE = ColorBase.RED +"Vous avez perdu !"+ColorBase.RESET +"\n"+"\n";
     public static final String COMBAT_WIN = "Vous avez gagné !";
+
+    public static final String COMBAT_NBWIN = ColorBase.YELLOW+ColorBase.BOLD+"Vous avez gagné : "+ColorBase.RESET;
+    public static final String COMBAT_NBWIN2 = ColorBase.YELLOW+ColorBase.BOLD+" fois !"+ColorBase.RESET;
+
+    public static final String COMBAT_WINSTREAK = ColorBase.YELLOW+ColorBase.BOLD+"Vous avez gagné "+ColorBase.RESET;
+    public static final String COMBAT_WINSTREAK2 = ColorBase.YELLOW+ColorBase.BOLD+" combats d'affilé !"+ColorBase.RESET+"\n"+"\n";
+    public static final String COMBAT_RESETWINSTREAK = ColorBase.UNDERLINE+"Vous avez perdu votre série de victoire !";
+
+    public static final String COMBAT_PVP = ColorBase.UNDERLINE+"Vous allez affronté un joueur !";
+    public static final String PVP_NO_ENNEMY = "Il n'y a pas d'ennemi !";
+
+
 
     //DEATH PRINT:
     public static final String DEATH_FAIM = "Vous êtes mort de faim !";
@@ -101,6 +121,7 @@ public class Texte {
     //DEATH MENU:
     public static final String DEATH_MENU ="Que voulez-vous faire ?";
     public static final String NOT_ENOUGHT_ENERGY = "Vous n'avez pas assez d'énergie !";
+
     public static String DEATH_CHOICE_1 =
             "\n 1. Revivre, coute 7 Energie, vous avez: " ;
             public static String DEATH_CHOICE_2 =

@@ -19,6 +19,9 @@ public class Data {
     private boolean sousMenuOn;
 
     private static int NbTour = 0;
+    private static int NbVictoire = 0;
+
+    private static int setNbStreakVictoire = 0;
 
     public boolean isProgramRun() {
         return ProgramRun;
@@ -36,11 +39,15 @@ public class Data {
         this.sousMenuOn = sousMenuOn;
     }
 
-    public static int getNbTour() {
-        return NbTour;
-    }
+    public static int getNbTour() {return NbTour;}
 
     public static void setNbTour(int nbTour) {
         NbTour = nbTour;
     }
+
+    public static int getNbVictoire() {return NbVictoire;}
+    public static void setNbVictoire(int nbVictoire) {NbVictoire = nbVictoire;}
+
+    public static int getNbStreakVictoire() {return setNbStreakVictoire;}
+    public static void setNbStreakVictoire(int setNbStreakVictoire) {Data.setNbStreakVictoire = setNbStreakVictoire;}
 }

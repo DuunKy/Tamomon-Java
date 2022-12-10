@@ -4,17 +4,17 @@
 
 # Gestion save:
 
-- Chaques lignes sont un parametre
+- Chaques lignes sont un paramètre
 
 # TODO LIST:
 
 - Remplir ds les crochets les noms
 - ajouter ✔ au TODO fait et ❌ au non fait
 
-## ❌ Si le temps le permet, faire un systeme de difficulté: 
+## ❌ Si le temps le permet, faire un system de difficulté: 
 
-   *  modifier ds data les retrait et ajou de points en fonction de la difficulté
-   *  rendre plus fort les ennemys
+   *  modifier ds data les retrait et ajout de points en fonction de la difficulté
+   *  rendre plus fort les enemy
 
 ## ✔ Ajout couleur qui facilite la lisibilité: 
 
@@ -99,4 +99,11 @@
         - fatigue = 0
 ## Combats :
 
-* ✔ Creer une fonction qui va générer un ennemi aléatoire
+* ✔ Creer une fonction qui va générer x ennemi aléatoire(stats aussi).
+* ✔ Fonction qui choisi un ennemi aléatoire dans la map.
+* ✔ Création d'une fonction switch pour la gestion du combat.
+  - ✔ Attaque
+  - 🔁 Défense
+  - 🔁 Fuite
+* ✔ Création d'une fonction qui va vérifier la condition de victoire
+* ✔ Création d'un compteureur de win / win streak

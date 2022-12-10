@@ -2,6 +2,7 @@ package utilitaires;
 
 import data.Data;
 import data.Texte;
+import model.Ennemy;
 import model.Personnage;
 
 import java.util.ArrayList;
@@ -114,4 +115,21 @@ public class Utilitaires {
     }
 
 
+    public static Ennemy arrayToEnnemy(ArrayList<String> parameters) {
+
+        parameters = getValueOfSaveArray(parameters);
+
+        return new Ennemy(
+
+                Integer.parseInt(parameters.get(1)),
+                Integer.parseInt(parameters.get(2)),
+                Integer.parseInt(parameters.get(3)),
+                Integer.parseInt(parameters.get(4)),
+                Integer.parseInt(parameters.get(5)),
+                Integer.parseInt(parameters.get(6)),
+                Integer.parseInt(parameters.get(7)),
+                parameters.get(0),
+                parameters.get(8)
+        );
+    }
 }
