@@ -34,7 +34,6 @@ public class Combat {
     }
 
     public void pvp(){
-        FileManage.createFile("enemy.txt");
         if (FileManage.fileExist("enemy.txt")){
             File enemyPvp = FileManage.openFile("enemy.txt");
             ennemies.put("EnemyPvp", Utilitaires.arrayToEnnemy(FileManage.readFile(enemyPvp)));
