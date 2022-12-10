@@ -6,9 +6,41 @@
 
 - Chaques lignes sont un paramètre
 
+# CARNET DE BORD:
+## Gestion des variables:
+  * class personnage:
+    - physique du perso est géré en string et il y a la possibilité d'importer d'autre physique en les ajoutant au fichier model.txt
+    - initialisation du personnage au lancement
+    - création du perso pui créaation du fichier save ce qui permet de lancer le jeu quoi qu'il arrive sur le fichier save
+    - crea: le perso est initailisé à ses valeurs par defaut ce qui veut dire que pour le noms et le physique, les string sont initialement égal à "none"
+    - pour les enemies, ceux ci sont créé au moment du combat avec la class perso
+  * gestion de la save:
+    - on a voulu que la save soit lisible et compréhensible, ce qui fait que lorsque vous l'ouvrez, vous tombrez sur les noms des variables et leurs valeurs.
+    - les noms des variables qui apparaissent dans la save peuvent etre changé autant que souhaité sans que cela ne pose aucun problème
+    - les path peuvent également etre changé si vous le voulez. (pour les fichier save et model). par defaut ceux ci devrait etre "src/save/save.txt" et "src/model/model.txt"
+  * Norme des variables:
+    - toute les variables sont en privé et sont géré avec des getter steer pour une meilleur sécurité.
+    - les nominations sont respectée pour toutes les variable, class, package et function etc
+## Deroulé du jeu:
+  * 1er etape:
+    - menu principal qui propose de cree ou de continuer avec un tamamon
+  * 2eme etape:
+    - boucle principal du jeu qui contient les action que le joueur peu faire
+    - updates des propriété du tamagochi
+    - possibilité d'enregistré la partie
+  * 3eme etape:
+    - l'affrontement
+  * 4eme etape:
+    - la mort
+    - menu qui propose de ressucité si on a 7 energie (ajout de notre part pour un coté deuxieme chance)
+    - menu principal ou quitter
+## Optimisation:
+  * minimalisation des warning.
+  * fonction bien définis avec des taches qui leurs sont propre
+  * maximisation du parse du projet
+
 # TODO LIST:
 
-- Remplir ds les crochets les noms
 - ajouter ✔ au TODO fait et ❌ au non fait
 
 ## ❌ Si le temps le permet, faire un system de difficulté: 
